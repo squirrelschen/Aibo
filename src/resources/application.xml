@@ -4,6 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="classpath:org/aibo/config/spring-mybatis.xml"/>
+    <import resource="classpath:spring-mybatis.xml"/>
 
 </beans>

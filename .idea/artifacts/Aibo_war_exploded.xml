@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="Aibo:war exploded">
-    <output-path>$PROJECT_DIR$/target/Aibo_1.0-SNAPSHOT_2018-01-24T03:43:35Z</output-path>
+    <output-path>$PROJECT_DIR$/target/Aibo_1.0-SNAPSHOT_2018-01-24T08:39:45Z</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -39,7 +39,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/Aibo_1.0-SNAPSHOT_2018-01-24T03:43:35Z/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/Aibo_1.0-SNAPSHOT_2018-01-24T08:39:45Z/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Aibo/web/Web" />
     </root>
