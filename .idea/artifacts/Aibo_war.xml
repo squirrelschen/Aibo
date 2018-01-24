@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="Aibo:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="Aibo_1.0-SNAPSHOT_20180124-1121.war">
+    <root id="archive" name="Aibo_1.0-SNAPSHOT_2018-01-24T03:24:43Z.war">
       <element id="artifact" artifact-name="Aibo:war exploded" />
     </root>
   </artifact>
