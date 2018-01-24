@@ -29,6 +29,7 @@
     <artifactId>Aibo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- build info start -->
     <build>
         <plugins>
             <plugin>
@@ -69,6 +70,9 @@
 
     </build>
 
+    <!-- build info end -->
+
+    <!-- global parameters  -->
     <properties>
         <spring.version>4.3.14.RELEASE</spring.version>
         <mybatis.version>3.4.4</mybatis.version>
