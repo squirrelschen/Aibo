@@ -11,16 +11,16 @@
     <title>login jsp </title>
 </head>
 <body>
-
-<form action="login" method="post" style="text-align: center">
-<input type="text" name="username" >
-<input type="text" name="password">
+<div id="container" style="text-align: center">
+<form action="login" method="post" >
+<input type="text" name="username" > <br>
+<input type="text" name="password"> <br>
     <input type="reset" value="重置">
     <input type="submit" value="登录">
 
 </form>
 
-
+</div>
 
 </body>
 </html>

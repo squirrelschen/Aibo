@@ -48,6 +48,7 @@
                     <!--<contextPath>/</contextPath>-->
                 <!--</configuration>-->
             <!--</plugin>-->
+        <!--</plugins>-->
 
             <!--<plugin>-->
                 <!--<artifactId>maven-compiler-plugin</artifactId>-->
