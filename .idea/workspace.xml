@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d0e97dc-ee2d-49f0-9d41-954b60f58383" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/org/aibo/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/main/org/aibo/action/LoginAction.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -821,7 +820,7 @@
       <workItem from="1516795465384" duration="349000" />
       <workItem from="1516797290097" duration="2132000" />
       <workItem from="1516866650277" duration="264000" />
-      <workItem from="1516867036742" duration="6026000" />
+      <workItem from="1516867036742" duration="6073000" />
     </task>
     <task id="LOCAL-00001" summary="Modify loginaction">
       <created>1516869580364</created>
@@ -844,11 +843,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516870427944</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Improve login function">
+      <created>1516873286863</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1516873286863</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30961000" />
+    <option name="totallyTimeSpent" value="31008000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -909,7 +915,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modify loginaction" />
     <MESSAGE value="Create login function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create login function" />
+    <MESSAGE value="Improve login function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve login function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
