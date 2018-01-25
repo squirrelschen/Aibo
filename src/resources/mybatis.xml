@@ -5,10 +5,10 @@
 <configuration>
     <!-- 命名空间 -->
     <typeAliases>
-
     </typeAliases>
 
     <!-- 映射map -->
     <mappers>
+        <mapper resource="org/aibo/mapper/LoginMapper.xml"></mapper>
     </mappers>
 </configuration>

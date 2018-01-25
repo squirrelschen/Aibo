@@ -24,7 +24,7 @@
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="contentType" value="text/html"/>
-        <property name="prefix" value="/jsp/"/>
+        <property name="prefix" value="/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 
