@@ -86,7 +86,7 @@ html,body {
 body {
 	margin: 0;
 	padding: 0;
-	background: url(../login/video/city.jpg) #fff;
+	background: url("video/city.jpg") #fff;
 	background-attachment: fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -161,7 +161,7 @@ input[type="text"] {
     font-weight: normal;
     letter-spacing: 1px;
 	font-family: 'Poiret One', cursive;
-    background: rgba(0,0,0,0.5) url(../login/images/user.png) no-repeat 325px 13px;
+    background: rgba(0,0,0,0.5) url("images/user.png") no-repeat 325px 13px;
 	 transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -169,7 +169,7 @@ input[type="text"] {
     -ms-transition: all 0.3s ease-in-out;
 }
 input[type="text"]:focus,input[type="text"]:hover {
-	background: #000 url(../login/images/user.png) no-repeat 325px 13px;
+	background: #000 url("images/user.png") no-repeat 325px 13px;
 }
 .form-group2-agile {
     position: relative;
@@ -186,7 +186,7 @@ input[type="password"] {
 	font-size:20px;
 	font-weight:normal;
 	font-family: 'Poiret One', cursive;
-	background:rgba(0,0,0,0.5) url(../login/images/key.png) no-repeat 325px 13px;
+	background:rgba(0,0,0,0.5) url("images/key.png") no-repeat 325px 13px;
 	letter-spacing:1px;
 	 transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -195,7 +195,7 @@ input[type="password"] {
     -ms-transition: all 0.3s ease-in-out;
 }
 input[type="password"]:focus,input[type="password"]:hover {
-	background: #000 url(../login/images/key.png) no-repeat 325px 13px;
+	background: #000 url("images/key.png") no-repeat 325px 13px;
 }
 .form-group3-agile {
 	margin-bottom:20px;
@@ -227,7 +227,7 @@ input[type="password"]:focus,input[type="password"]:hover {
 }
 .form-group3-agile input[type="checkbox"]:checked+label span:first-child:before {
     content: "";
-    background: url(../login/images/tick.png)no-repeat;
+    background: url("images/tick.png")no-repeat;
     position: absolute;
 	left: 2px;
     top: 2px;
@@ -366,20 +366,20 @@ input[type="text"], input[type="password"] {
     width: 40%;	
 }
 input[type="text"] {
-	background: rgba(0,0,0,0.5) url(../login/images/user.png) no-repeat 327px 10px;
+	background: rgba(0,0,0,0.5) url(images/user.png) no-repeat 327px 10px;
 	font-size:18px;
 	height:25px;
 }
 input[type="text"]:hover,input[type="text"]:focus {
-	background: #000 url(../login/images/user.png) no-repeat 327px 10px;
+	background: #000 url(images/user.png) no-repeat 327px 10px;
 }
 input[type="password"] {
-    background: rgba(0,0,0,0.5) url(../login/images/key.png) no-repeat 327px 10px;
+    background: rgba(0,0,0,0.5) url(images/key.png) no-repeat 327px 10px;
 	font-size:18px;
 	height:25px;
 }
 input[type="password"]:hover,input[type="password"]:focus {
-    background: #000 url(../login/images/key.png) no-repeat 327px 10px;
+    background: #000 url(images/key.png) no-repeat 327px 10px;
 }
 input[type="submit"] {
 	font-size:20px;
@@ -400,20 +400,20 @@ input[type="submit"]	{
 	width: 337px;
 }
 input[type="text"] {
-    background: rgba(0,0,0,0.5) url(../login/images/user.png) no-repeat 300px 10px;
+    background: rgba(0,0,0,0.5) url(images/user.png) no-repeat 300px 10px;
     font-size: 18px;
     height: 25px;
 }
 input[type="text"]:hover,input[type="text"]:focus {
-	background: #000 url(../login/images/user.png) no-repeat 300px 10px;
+	background: #000 url(images/user.png) no-repeat 300px 10px;
 }
 input[type="password"] {
-    background: rgba(0,0,0,0.5) url(../login/images/key.png) no-repeat 300px 10px;
+    background: rgba(0,0,0,0.5) url(images/key.png) no-repeat 300px 10px;
 	font-size:18px;
 	height:25px;
 }
 input[type="password"]:hover,input[type="password"]:focus {
-    background: #000 url(../login/images/key.png) no-repeat 300px 10px;
+    background: #000 url(images/key.png) no-repeat 300px 10px;
 }
 input[type="text"], input[type="password"] {
     width: 71%;
@@ -478,20 +478,20 @@ input[type="text"], input[type="password"] {
 
 @media (max-width: 640px) {
 input[type="text"] {
-    background: rgba(0,0,0,0.5) url(../login/images/user.png) no-repeat 292px 10px;
+    background: rgba(0,0,0,0.5) url(images/user.png) no-repeat 292px 10px;
     font-size: 18px;
     height: 25px;
 }
 input[type="text"]:focus,input[type="text"]:hover {
-	background: #000 url(../login/images/user.png) no-repeat 292px 10px;
+	background: #000 url(images/user.png) no-repeat 292px 10px;
 }
 input[type="password"] {
-    background: rgba(0,0,0,0.5) url(../login/images/key.png) no-repeat 292px 10px;
+    background: rgba(0,0,0,0.5) url(images/key.png) no-repeat 292px 10px;
     font-size: 18px;
     height: 25px;
 }
 input[type="password"]:focus,input[type="password"]:hover {
-	background: #000 url(../login/images/key.png) no-repeat 292px 10px;
+	background: #000 url(images/key.png) no-repeat 292px 10px;
 }
 input[type="submit"] {
     width: 327px;
@@ -503,20 +503,20 @@ input[type="submit"] {
 	width:120px;
 }
 input[type="text"] {
-    background: rgba(0,0,0,0.5) url(../login/images/user.png) no-repeat 273px 10px;
+    background: rgba(0,0,0,0.5) url(images/user.png) no-repeat 273px 10px;
     font-size: 18px;
     height: 25px;
 }
 input[type="text"]:focus,input[type="text"]:hover {
-	background: #000 url(../login/images/user.png) no-repeat 273px 10px;
+	background: #000 url(/images/user.png) no-repeat 273px 10px;
 }
 input[type="password"] {
-    background: rgba(0,0,0,0.5) url(../login/images/key.png) no-repeat 273px 10px;
+    background: rgba(0,0,0,0.5) url(images/key.png) no-repeat 273px 10px;
     font-size: 18px;
     height: 25px;
 }
 input[type="password"]:focus,input[type="password"]:hover {
-	background: #000 url(../login/images/key.png) no-repeat 273px 10px;
+	background: #000 url(images/key.png) no-repeat 273px 10px;
 }
 input[type="submit"] {
     width: 308px;
@@ -534,20 +534,20 @@ h1 {
     letter-spacing: 1px;
 }
 input[type="text"] {
-    background: rgba(0,0,0,0.5) url(../login/images/user.png) no-repeat 258px 10px;
+    background: rgba(0,0,0,0.5) url(images/user.png) no-repeat 258px 10px;
     font-size: 18px;
     height: 25px;
 }
 input[type="text"]:focus,input[type="text"]:hover {
-	background: #000 url(../login/images/user.png) no-repeat 258px 10px;
+	background: #000 url(images/user.png) no-repeat 258px 10px;
 }
 input[type="password"] {
-    background: rgba(0,0,0,0.5) url(../login/images/key.png) no-repeat 258px 10px;
+    background: rgba(0,0,0,0.5) url(images/key.png) no-repeat 258px 10px;
     font-size: 18px;
     height: 25px;
 }
 input[type="password"]:focus,input[type="password"]:hover {
-	background: #000 url(../login/images/key.png) no-repeat 258px 10px;
+	background: #000 url(images/key.png) no-repeat 258px 10px;
 }
 input[type="submit"] {
     width: 295px;
@@ -561,20 +561,20 @@ h1 {
     letter-spacing: 1px;
 }
 input[type="text"] {
-    background: rgba(0,0,0,0.5) url(../login/images/user.png) no-repeat 215px 9px;
+    background: rgba(0,0,0,0.5) url(images/user.png) no-repeat 215px 9px;
     font-size: 16px;
     height: 22px;
 }
 input[type="text"]:focus,input[type="text"]:hover {
-	background: #000 url(../login/images/user.png) no-repeat 215px 9px;
+	background: #000 url(images/user.png) no-repeat 215px 9px;
 }
 input[type="password"] {
-    background: rgba(0,0,0,0.5) url(../login/images/key.png) no-repeat 215px 9px;
+    background: rgba(0,0,0,0.5) url(images/key.png) no-repeat 215px 9px;
     font-size: 16px;
     height: 22px;
 }
 input[type="password"]:focus,input[type="password"]:hover {
-	background: #000 url(../login/images/key.png) no-repeat 215px 9px;
+	background: #000 url(images/key.png) no-repeat 215px 9px;
 }
 input[type="submit"] {
     width: 253px;
