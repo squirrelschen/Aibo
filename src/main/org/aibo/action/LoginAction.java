@@ -23,7 +23,7 @@ public class LoginAction {
     private static Logger log = Logger.getLogger(LoginAction.class);
 
 
-    @RequestMapping(value="/login",method = RequestMethod.POST)
+    @RequestMapping(value="login",method = RequestMethod.POST)
     public String login(@RequestParam("username")String username,@RequestParam("password")String password)
     {
 
