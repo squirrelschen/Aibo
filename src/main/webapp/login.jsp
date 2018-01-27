@@ -21,11 +21,7 @@
     <!--[if lt IE 9]>
     <script src="js/html5.js"></script>
     <![endif]-->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <%--<script type="text/javascript" src="js/jquery.form.js"></script>--%>
-    <%--<script type="text/javascript" src="js/tooltips.js"></script>--%>
-    <script type="text/javascript" src="layui/layui.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+
 </head>
 
 <body>
@@ -68,10 +64,11 @@
 </div>
 
 <!-- Javascript -->
-
+<script src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
 <script src="js/supersized.3.2.7.min.js"></script>
 <script src="js/supersized-init.js"></script>
-<script src="js/scripts.js"></script>
 
 </body>
 </html>
