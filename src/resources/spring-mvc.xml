@@ -18,6 +18,7 @@
     <mvc:resources mapping="/video/**" location="/video/"/>
     <mvc:resources mapping="/fonts/**" location="/fonts/"/>
     <mav:resources mapping="/bootstrap/**" location="/bootstrap/"/>
+    <mvc:resources mapping="/layui/**" location="/layui/"/>
 
     <!-- 注解的映射器 -->
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>

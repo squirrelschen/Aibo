@@ -22,8 +22,9 @@
     <script src="js/html5.js"></script>
     <![endif]-->
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/jquery.form.js"></script>
-    <script type="text/javascript" src="js/tooltips.js"></script>
+    <%--<script type="text/javascript" src="js/jquery.form.js"></script>--%>
+    <%--<script type="text/javascript" src="js/tooltips.js"></script>--%>
+    <script type="text/javascript" src="layui/layui.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
 </head>
 
@@ -40,16 +41,14 @@
             <div class="login_form">
                 <form action="login" id="login_form" method="post">
                     <div class="form-group">
-                        <label for="j_username" class="t">邮　箱：</label>
-                        <input id="email" value="" name="email" type="text" class="form-control x319 in"
+                        <label>用户名/邮箱地址/手机号码:</label>
+                        <input id="username" value="" name="username" type="text" class="form-control x319 in"
                                autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <label for="j_password" class="t">密　码：</label>
-                        <input id="password" value="" name="password" type="password"
-                               class="password form-control x319 in">
+                        <label>密码:</label>
+                        <input id="password" value="" name="password" type="password" class="password form-control x319 in">
                     </div>
-
 
                     <div class="form-group" style="text-align: center">
                         <button type="button"  id="submit_btn"
