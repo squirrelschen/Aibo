@@ -55,6 +55,7 @@
                     <div class="form-group">
                         <hr/>
                         <div class="bottom">Copyright &copy; 2017 - 2018 <a href="#">Squirrel Studio </a></div>
+                        <hr/>
                     </div>
 
                 </form>
