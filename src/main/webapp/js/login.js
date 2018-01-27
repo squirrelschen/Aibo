@@ -35,11 +35,9 @@ $(document).ready(function(){
 						method:"post",
                         success: function (data) {
                             layer.msg("登录成功");
-                            window.location.href="success.jsp";
                         },
                         error: function () {
                             layer.msg("错误链接");
-                            window.location.reload();
                         }
                     })
                 }

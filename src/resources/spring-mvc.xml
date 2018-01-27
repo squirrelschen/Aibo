@@ -8,19 +8,6 @@
     <!-- 注解的支持，可以将请求参数绑定到控制器参数-->
     <mvc:annotation-driven/>
 
-    <mvc:annotation-driven>
-        <mvc:message-converters register-defaults="true">
-            <!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
-            <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
-                <property name="supportedMediaTypes">
-                    <list>
-                        <value>application/json;charset=UTF-8</value>
-                    </list>
-                </property>
-            </bean>
-        </mvc:message-converters>
-    </mvc:annotation-driven>
-
     <!--注解扫描-->
     <context:component-scan base-package="org.aibo.*"/>
 
