@@ -8,50 +8,67 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Proficient Login Form Flat Responsive widget Template :: w3layouts</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Proficient Login Form Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- fonts -->
-    <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <!-- /fonts -->
-    <!-- css -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type='text/css' media="all" />
-    <!-- /css -->
+    <meta charset="utf-8">
+    <title>登录页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/supersized.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
-<div class="overlay">
-    <h1 class="w3layouts agileits">Squirrel Studio </h1>
-    <div class="content-w3ls agileits">
-        <img src="images/girl.png" alt="" class="user-wthree">
-        <form action="login" method="post">
-            <div class="form-group1-agile agile-info">
-                <input type="text" name="username" value="Username" placeholder="Username">
+
+<div class="page-container">
+    <div class="main_box">
+        <p class="login_box">
+
+            <div id="login_logo" style="text-align: center">
+            <p><h1>Squirrel Studio </h1></p>
             </div>
-            <div class="form-group2-agile agile-info">
-                <input type="password" name="password" value="Password" placeholder="Password">
+
+            <div class="login_form">
+                <form action="login" id="login_form" method="post">
+                    <div class="form-group">
+                        <label>用户名/邮箱地址/手机号码:</label>
+                        <input id="username" value="" name="username" type="text" class="form-control x319 in"
+                               autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label>密码:</label>
+                        <input id="password" value="" name="password" type="password" class="password form-control x319 in">
+                    </div>
+
+                    <div class="form-group" style="text-align: center">
+                        <button type="button"  id="submit_btn"
+                                class="btn btn-primary btn-lg">&nbsp;登&nbsp;录&nbsp </button>
+                        <input type="reset" value="&nbsp;重&nbsp;置&nbsp;" class="btn btn-default btn-lg">
+                    </div>
+
+                    <div class="form-group">
+                        <hr/>
+                        <div class="bottom">Copyright &copy; 2017 - 2018 <a href="#">Squirrel Studio </a></div>
+                    </div>
+
+                </form>
             </div>
-            <div class="form-group3-agile wthree">
-                <input type="checkbox" id="brand" value="">
-                <label for="brand"><span></span> Keep Me Logged In?</label>
-            </div>
-            <input type="submit" value="LOG IN">
-        </form>
-        <a href="#" class="face-link"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
-        <a href="#" class="twitter-link"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-    </div>
-    <div class="footer-w3ls w3-agile">
-        <p class="w3-agileits">© 2017 Proficient Login Form. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts</a></p>
+        </div>
     </div>
 </div>
-<video autoplay loop id="video-background" poster="video/city.jpg" muted>
-    <source src="video/city.mp4" type="video/mp4">
-</video>
-<!-- js -->
-<script src="js/modernizr.min.js"></script>
-<!-- /js -->
+
+<!-- Javascript -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized-init.js"></script>
+
 </body>
 </html>
