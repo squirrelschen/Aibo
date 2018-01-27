@@ -15,16 +15,15 @@
     <mvc:resources mapping="/css/**" location="/css/"/>
     <mvc:resources mapping="/images/**" location="/images/"/>
     <mvc:resources mapping="/js/**" location="/js/"/>
-    <mvc:resources mapping="/video/**" location="/video/"/>
     <mvc:resources mapping="/fonts/**" location="/fonts/"/>
     <mav:resources mapping="/bootstrap/**" location="/bootstrap/"/>
     <mvc:resources mapping="/layui/**" location="/layui/"/>
 
-    <!-- 注解的映射器 -->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+    <!--&lt;!&ndash; 注解的映射器 &ndash;&gt;-->
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
 
-    <!-- 注解的适配器 -->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
+    <!--&lt;!&ndash; 注解的适配器 &ndash;&gt;-->
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>-->
 
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -33,16 +32,16 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--上传文件配置-->
-    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <!-- 默认编码 -->
-        <property name="defaultEncoding" value="UTF-8"/>
-        <!-- 启用是为了推迟文件解析，以便捕获文件大小异常 -->
-        <property name="resolveLazily" value="true"/>
-        <!-- 文件大小最大值 -->
-        <property name="maxUploadSize" value="209715200"/>
-        <!-- 内存中的最大值 -->
-        <property name="maxInMemorySize" value="40960"/>
-    </bean>
+    <!--&lt;!&ndash;上传文件配置&ndash;&gt;-->
+    <!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+        <!--&lt;!&ndash; 默认编码 &ndash;&gt;-->
+        <!--<property name="defaultEncoding" value="UTF-8"/>-->
+        <!--&lt;!&ndash; 启用是为了推迟文件解析，以便捕获文件大小异常 &ndash;&gt;-->
+        <!--<property name="resolveLazily" value="true"/>-->
+        <!--&lt;!&ndash; 文件大小最大值 &ndash;&gt;-->
+        <!--<property name="maxUploadSize" value="209715200"/>-->
+        <!--&lt;!&ndash; 内存中的最大值 &ndash;&gt;-->
+        <!--<property name="maxInMemorySize" value="40960"/>-->
+    <!--</bean>-->
 
 </beans>
