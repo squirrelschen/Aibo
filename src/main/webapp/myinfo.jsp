@@ -15,7 +15,7 @@
 			<title>用户首页</title>
 			<link rel="stylesheet" href="css/materialize.css" />
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-			<script type="text/javascript" src="js/materialize.min.js"></script>
+			<script type="text/javascript" src="js/materialize.js"></script>
 			<link rel="stylesheet" href="css/material-icons.css">
 		</head>
 
@@ -24,8 +24,8 @@
 				<div class="col s12 m4 l3">
 					<div id="nav-bar">
 						<ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0px);">
-							<li class="bold">
-								<p>logo 个人用户头像</p>
+							<li class="bold" style="text-align: center;">
+										<a class="collapsible-header waves-effect waves-teal" href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px"></a>
 							</li>
 							<li class="bold active">
 								<a class="collapsible-header waves-effect waves-teal" href="my_info.html"><i class="material-icons">info</i>我的资料</a>
@@ -60,8 +60,8 @@
 				<div class="col s12 m5 l9">
 					<h2 class="header">个人资料</h2>
 					<div class="card horizontal">
-						<div class="card-image">
-							<img src="https://lorempixel.com/100/190/nature/6">
+						<div>
+							<a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px">修改头像</a>
 						</div>
 						<div class="card-stacked">
 							<div class="card-content">
@@ -73,7 +73,7 @@
 									<label>性别</label><input type="radio" name="sex" id="man"><label for="man">男</label><input type="radio" name="sex" id="woman"><label for="woman">女</label><input type="radio" name="sex" id="secret"><label for="secret">保密</label><br/>
 									<label>生日</label><input type="text" class="datepicker">
 									<label>行业</label><input type="text">
-									<label>地区</label>
+									<label>地区</label><br/>
 									<label>省</label>
 
 									<select>
@@ -93,7 +93,7 @@
 										<option value="5">1</option>
 										<option value="6">1</option>
 									</select>
-<br />
+									<br />
 									<label>县</label>
 									<select>
 										<option value="1">1</option>
@@ -108,7 +108,7 @@
 							</div>
 							<div class="card-action">
 								<a href="#">This is a link</a>
-								
+
 							</div>
 						</div>
 					</div>
