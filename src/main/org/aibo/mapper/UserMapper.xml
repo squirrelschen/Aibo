@@ -5,5 +5,13 @@
 <mapper namespace="org.aibo.mapper.UserMapper">
 
 
+    <resultMap id="user" type="User">
+        <result column="" property=""></result>
 
+    </resultMap>
+
+
+    <select id="getUserInfo" resultType="User" resultMap="user" parameterType="java.lang.String">
+        SELECT * from user_info where user_name =#{username}
+    </select>
 </mapper>
