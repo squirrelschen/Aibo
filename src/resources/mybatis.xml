@@ -5,6 +5,7 @@
 <configuration>
     <!-- 命名空间 -->
     <typeAliases>
+        <typeAlias type="org.aibo.bean.User" alias="User"></typeAlias>
     </typeAliases>
 
     <!-- 映射map -->

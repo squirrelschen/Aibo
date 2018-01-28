@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.aibo.mapper.UserMapper">
+
+
+    <resultMap id="user" type="User">
+        <result column="" property=""></result>
+
+    </resultMap>
+
+
+    <select id="getUserInfo" resultType="User" resultMap="user" parameterType="java.lang.String">
+        SELECT * from user_info where user_name =#{username}
+    </select>
+</mapper>
