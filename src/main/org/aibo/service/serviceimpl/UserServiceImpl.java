@@ -18,4 +18,8 @@ public class UserServiceImpl implements UserService {
     public User getUserInfo(String username) {
         return userDao.getUserInfo(username);
     }
+
+    public int updateUserInfo(User user) {
+        return userDao.updateUserInfo(user);
+    }
 }

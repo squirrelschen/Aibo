@@ -8,4 +8,5 @@ import org.aibo.bean.User;
 public interface UserService {
 
     public User getUserInfo(String username);
+    public int  updateUserInfo(User user);
 }

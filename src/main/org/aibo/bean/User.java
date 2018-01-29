@@ -1,6 +1,10 @@
 package org.aibo.bean;
 
+import com.alibaba.fastjson.annotation.JSONField;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by Squirrel-Chen on 2018/1/28.
@@ -15,13 +19,17 @@ public class User implements Serializable{
     private int user_id;                       //用户id
     private String user_name;                  //用户名
     private String user_nickname;             //用户昵称
-    private String user_relaname;             //用户真实姓名
+    private String user_realname;             //用户真实姓名
     private String user_sex;                  //用户性别
     private String user_job;                  //用户职位
     private String user_work;                 //用户所属行业
-    private String user_ares;                 //用户所在地区
+    private String user_area;                 //用户所在地区
     private String user_desc;                 //用户简述
     private String user_icon;                 //用户头像存放路径
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JSONField(format = "yyyy-MM-dd")                //设置date类型json处理时间格式
+    private Date user_birth;                 //用户生日
+
 
     /**
      *  属性的getter setter 方法
@@ -52,12 +60,12 @@ public class User implements Serializable{
         this.user_nickname = user_nickname;
     }
 
-    public String getUser_relaname() {
-        return user_relaname;
+    public String getUser_realname() {
+        return user_realname;
     }
 
-    public void setUser_relaname(String user_relaname) {
-        this.user_relaname = user_relaname;
+    public void setUser_realname(String user_realname) {
+        this.user_realname = user_realname;
     }
 
     public String getUser_sex() {
@@ -84,12 +92,12 @@ public class User implements Serializable{
         this.user_work = user_work;
     }
 
-    public String getUser_ares() {
-        return user_ares;
+    public String getUser_area() {
+        return user_area;
     }
 
-    public void setUser_ares(String user_ares) {
-        this.user_ares = user_ares;
+    public void setUser_area(String user_area) {
+        this.user_area = user_area;
     }
 
     public String getUser_desc() {
@@ -108,4 +116,18 @@ public class User implements Serializable{
         this.user_icon = user_icon;
     }
 
+    public void setUser_birth(Date user_birth) {
+        this.user_birth = user_birth;
+    }
+
+    public Date getUser_birth() {
+        return user_birth;
+    }
+
+    public String toString(){
+
+        return   user_id+"user_name is "+user_name+"user_nickname is "+user_nickname+"user_realname is "+user_realname+
+                "user_sex is"+user_sex+"user_job is"+user_job+"user_work is"+user_work+"user_birth is"+user_birth+
+                "user_icon is"+user_icon+"user_area is"+user_area+"user_desc is "+user_desc;
+    }
 }
