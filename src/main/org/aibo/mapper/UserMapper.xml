@@ -6,8 +6,17 @@
 
 
     <resultMap id="user" type="User">
-        <result column="" property=""></result>
-
+        <result column="user_id" property="user_id"></result>
+        <result column="user_name" property="user_name"></result>
+        <result column="user_nickname" property="user_nickname"></result>
+        <result column="user_realname" property="user_realname"></result>
+        <result column="user_sex" property="user_sex"></result>
+        <result column="user_job" property="user_job"></result>
+        <result column="user_work" property="user_work"></result>
+        <result column="user_area" property="user_area"></result>
+        <result column="user_desc" property="user_desc"></result>
+        <result column="user_icon" property="user_icon"></result>
+        <result column="user_birth" property="user_birth"></result>
     </resultMap>
 
 

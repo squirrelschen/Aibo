@@ -117,18 +117,40 @@
 			</div>
 			</div>
 			</div>
-		</body>
-		<script type="application/javascript">
-			$('.datepicker').pickadate({
-				selectMonths: true, // Creates a dropdown to control month
-				selectYears: 15, // Creates a dropdown of 15 years to control year,
-				today: 'Today',
-				clear: 'Clear',
-				close: 'Ok',
-				closeOnSelect: false // Close upon selecting a date,
-			});
 
-			$('select').material_select();
-		</script>
+			<script type="text/javascript">
+                $(document).ready(function () {
+
+                    $('.datepicker').pickadate({
+                        selectMonths: true, // Creates a dropdown to control month
+                        selectYears: 15, // Creates a dropdown of 15 years to control year,
+                        today: 'Today',
+                        clear: 'Clear',
+                        close: 'Ok',
+                        closeOnSelect: false // Close upon selecting a date,
+                    });
+
+                    $('select').material_select();
+
+                    $.ajax({
+                        url:"getUserInfo",
+                        data:{username:"squirrelchen"},
+                        dataType:"json",
+                        method:"post",
+                        success:function (data) {
+                            console.log("this object is ")+data;
+                        },
+                        error: function () {
+                            console.log("error ");
+                        }
+                    })
+
+
+
+                })
+			</script>
+
+	</body>
+
 
 </html>
