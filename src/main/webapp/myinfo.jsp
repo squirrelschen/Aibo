@@ -65,14 +65,14 @@
 						</div>
 						<div class="card-stacked">
 							<div class="card-content">
-								<form>
-									<label>用户名</label><input type="text" id="user_name">
-									<label>昵称</label><input type="text" id="user_nickname">
-									<label>真实姓名</label><input type="text" id="user_realname">
-									<label>职位</label><input type="text" id="user_job">
-									<label>性别</label><input type="radio" name="sex" id="man"><label for="man">男</label><input type="radio" name="sex" id="woman"><label for="woman">女</label><input type="radio" name="sex" id="secret"><label for="secret">保密</label><br/>
-									<label>生日</label><input type="text" class="datepicker" id="user_birth">
-									<label>行业</label><input type="text" id="user_work">
+								<form action="updateUserInfo" method="post">
+									<label>用户名</label><input type="text" id="user_name" name="user_name">
+									<label>昵称</label><input type="text" id="user_nickname" name="user_nickname">
+									<label>真实姓名</label><input type="text" id="user_realname" name="user_realname">
+									<label>职位</label><input type="text" id="user_job" name="user_job">
+									<label>性别</label><input type="radio" name="user_sex" id="man"><label for="man">男</label><input type="radio" name="user_sex" id="woman"><label for="woman">女</label><input type="radio" name="user_sex" id="secret"><label for="secret">保密</label><br/>
+									<label>生日</label><input type="text" class="datepicker" id="user_birth" name="user_birth">
+									<label>行业</label><input type="text" id="user_work" name="user_work">
 									<label>地区</label><br/>
 									<label>省</label>
 
@@ -103,10 +103,10 @@
 									</select>
 
 									<br/>
-									<label>简述</label><textarea cols="10" rows="10" id="user_desc"></textarea>
+									<label>简述</label><textarea cols="10" rows="10" id="user_desc" name="user_desc"></textarea>
 
 									<hr/>
-									<button class="btn waves-effect waves-light red" type="submit" name="action">submit<i class="material-icons right">mode_edit</i></button>
+									<button class="btn waves-effect waves-light red" type="submit" name="action">修改资料<i class="material-icons right">mode_edit</i></button>
 
 								</form>
 							</div>

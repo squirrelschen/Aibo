@@ -1,6 +1,7 @@
 package org.aibo.bean;
 
 import com.alibaba.fastjson.annotation.JSONField;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -25,6 +26,7 @@ public class User implements Serializable{
     private String user_area;                 //用户所在地区
     private String user_desc;                 //用户简述
     private String user_icon;                 //用户头像存放路径
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JSONField(format = "yyyy-MM-dd")                //设置date类型json处理时间格式
     private Date user_birth;                 //用户生日
 
@@ -120,5 +122,12 @@ public class User implements Serializable{
 
     public Date getUser_birth() {
         return user_birth;
+    }
+
+    public String toString(){
+
+        return   user_id+"user_name is "+user_name+"user_nickname is "+user_nickname+"user_realname is "+user_realname+
+                "user_sex is"+user_sex+"user_job is"+user_job+"user_work is"+user_work+"user_birth is"+user_birth+
+                "user_icon is"+user_icon+"user_area is"+user_area+"user_desc is "+user_desc;
     }
 }

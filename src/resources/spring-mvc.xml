@@ -23,6 +23,17 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
+    <!--&lt;!&ndash; 自定义参数绑定 &ndash;&gt;-->
+         <!--<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">-->
+             <!--&lt;!&ndash; 转换器 &ndash;&gt;-->
+             <!--<property name="converters">-->
+                <!--<set>-->
+                    <!--&lt;!&ndash; 日期类型转换 &ndash;&gt;-->
+                    <!--<bean class="org.aibo.util.CustomDateConverter"/>-->
+                <!--</set>-->
+             <!--</property>-->
+        <!--</bean>-->
+
     <!--注解扫描-->
     <context:component-scan base-package="org.aibo.*"/>
 

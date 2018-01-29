@@ -21,6 +21,11 @@
 
 
     <select id="getUserInfo" resultType="User" resultMap="user" parameterType="java.lang.String">
-        SELECT * from user_info where user_name =#{username}
+        SELECT * FROM user_info WHERE user_name =#{username}
     </select>
+    <update id="updateUserInfo"  parameterType="User">
+        UPDATE user_info SET user_nickname =#{user_nickname},user_realname=#{user_realname},
+        user_sex=#{user_sex},user_job=#{user_job},user_work=#{user_work},user_area=#{user_area},user_desc=#{user_desc},
+        user_birth=#{user_birth} WHERE user_name=#{user_name}
+    </update>
 </mapper>

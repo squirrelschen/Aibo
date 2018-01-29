@@ -13,6 +13,9 @@ $(document).ready(function () {
         today: 'Today',
         clear: 'Clear',
         close: 'Ok',
+        format: 'yyyy-mm-dd',
+        formatSubmit:'yyyy-mm-dd',
+        hiddenName:'true',
         closeOnSelect: false // Close upon selecting a date,
     });
 
