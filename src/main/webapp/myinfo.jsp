@@ -66,7 +66,7 @@
 						<div class="card-stacked">
 							<div class="card-content">
 								<form action="updateUserInfo" method="post">
-									<label>用户名</label><input type="text" id="user_name" name="user_name">
+									<label>用户名</label><input type="text" id="user_name" name="user_name" readonly="true">
 									<label>昵称</label><input type="text" id="user_nickname" name="user_nickname">
 									<label>真实姓名</label><input type="text" id="user_realname" name="user_realname">
 									<label>职位</label><input type="text" id="user_job" name="user_job">

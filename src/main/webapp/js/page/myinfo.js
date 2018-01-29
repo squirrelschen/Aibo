@@ -38,6 +38,19 @@ $(document).ready(function () {
             $("#user_work").val(data.user_work);
             $("#user_desc").val(data.user_desc);
 
+            if(data.user_sex=='男')
+            {
+                $("input[name=user_sex]:eq(0)").attr("checked","true");
+            }
+            else if (data.user_sex=='女')
+            {
+                $("input[name=user_sex]:eq(1)").attr("checked","true");
+            }
+            else
+            {
+                $("input[name=user_sex]:eq(2)").attr("checked","true");
+            }
+
         },
         error: function () {
             console.log("error ");
