@@ -22,6 +22,7 @@ public class UserAction {
     @Autowired
     private UserService userService;
     private Object json;
+    private String status;
 
     public Object getJson() {
         return json;
@@ -30,16 +31,37 @@ public class UserAction {
         this.json = json;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     @RequestMapping(value="/getUserInfo",method = RequestMethod.POST)
     @ResponseBody
     public Object getUserInfo(@RequestParam("username")String username)
     {
-        User user=userService.getUserInfo(username);
-        String str="{'status':'true'}";
-        HashMap<String,Object> result=new HashMap();
-        result.put("s",str);
-        result.put("user",user);
-        json= JSON.toJSON(result);
+
+        if(!username.equals(""))
+        {
+            User user=userService.getUserInfo(username);
+            if(user!=null)
+            {
+                json=JSON.toJSON(user);
+            }
+            else
+            {
+                status="{'status':'2'}";
+                json=JSON.parse(status);
+            }
+        }
+        else
+        {
+            status="{'status':'0'}";
+            json=JSON.parse(status);
+        }
         return json;
     }
 

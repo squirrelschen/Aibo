@@ -18,6 +18,7 @@ public class UserDaoImpl implements UserDao {
 
 
     public User getUserInfo(String username) {
+
         return userMapper.getUserInfo(username);
     }
 }

@@ -1,5 +1,7 @@
 package org.aibo.bean;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -23,6 +25,7 @@ public class User implements Serializable{
     private String user_area;                 //用户所在地区
     private String user_desc;                 //用户简述
     private String user_icon;                 //用户头像存放路径
+    @JSONField(format = "yyyy-MM-dd")                //设置date类型json处理时间格式
     private Date user_birth;                 //用户生日
 
 
