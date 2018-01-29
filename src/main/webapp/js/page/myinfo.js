@@ -22,6 +22,9 @@ $(document).ready(function () {
     // 使用选择js控件
     $('select').material_select();
 
+    //使用省市县三级联动控件
+    addressInit('shen','city','xian','请选择省','请选择市','请选择县');
+
     // ajax获取用户信息并填入表单
     $.ajax({
         url:"getUserInfo",

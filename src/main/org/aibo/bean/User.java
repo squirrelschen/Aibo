@@ -18,7 +18,6 @@ public class User implements Serializable{
 
     private int user_id;                       //用户id
     private String user_name;                  //用户名
-    private String user_nickname;             //用户昵称
     private String user_realname;             //用户真实姓名
     private String user_sex;                  //用户性别
     private String user_job;                  //用户职位
@@ -50,14 +49,6 @@ public class User implements Serializable{
 
     public void setUser_name(String user_name) {
         this.user_name = user_name;
-    }
-
-    public String getUser_nickname() {
-        return user_nickname;
-    }
-
-    public void setUser_nickname(String user_nickname) {
-        this.user_nickname = user_nickname;
     }
 
     public String getUser_realname() {
@@ -126,7 +117,7 @@ public class User implements Serializable{
 
     public String toString(){
 
-        return   user_id+"user_name is "+user_name+"user_nickname is "+user_nickname+"user_realname is "+user_realname+
+        return   user_id+"user_name is "+user_name+"user_realname is "+user_realname+
                 "user_sex is"+user_sex+"user_job is"+user_job+"user_work is"+user_work+"user_birth is"+user_birth+
                 "user_icon is"+user_icon+"user_area is"+user_area+"user_desc is "+user_desc;
     }

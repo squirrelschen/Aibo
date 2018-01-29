@@ -8,7 +8,6 @@
     <resultMap id="user" type="User">
         <result column="user_id" property="user_id"></result>
         <result column="user_name" property="user_name"></result>
-        <result column="user_nickname" property="user_nickname"></result>
         <result column="user_realname" property="user_realname"></result>
         <result column="user_sex" property="user_sex"></result>
         <result column="user_job" property="user_job"></result>
@@ -24,7 +23,7 @@
         SELECT * FROM user_info WHERE user_name =#{username}
     </select>
     <update id="updateUserInfo"  parameterType="User">
-        UPDATE user_info SET user_nickname =#{user_nickname},user_realname=#{user_realname},
+        UPDATE user_info SET user_realname=#{user_realname},
         user_sex=#{user_sex},user_job=#{user_job},user_work=#{user_work},user_area=#{user_area},user_desc=#{user_desc},
         user_birth=#{user_birth} WHERE user_name=#{user_name}
     </update>
