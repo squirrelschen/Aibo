@@ -67,7 +67,6 @@
 							<div class="card-content">
 								<form action="updateUserInfo" method="post">
 									<label>用户名</label><input type="text" id="user_name" name="user_name" readonly="true">
-									<label>昵称</label><input type="text" id="user_nickname" name="user_nickname">
 									<label>真实姓名</label><input type="text" id="user_realname" name="user_realname">
 									<label>职位</label><input type="text" id="user_job" name="user_job">
 									<label>性别</label><input type="radio" name="user_sex" id="man"><label for="man">男</label><input type="radio" name="user_sex" id="woman"><label for="woman">女</label><input type="radio" name="user_sex" id="secret"><label for="secret">保密</label><br/>
@@ -103,9 +102,8 @@
 									</select>
 
 									<br/>
-									<label>简述</label><textarea cols="10" rows="10" id="user_desc" name="user_desc"></textarea>
+									<label>简述</label><textarea cols="10" rows="10" id="user_desc" name="user_desc" class="materialize-textarea" data-length="255"></textarea>
 
-									<hr/>
 									<button class="btn waves-effect waves-light red" type="submit" name="action">修改资料<i class="material-icons right">mode_edit</i></button>
 
 								</form>
