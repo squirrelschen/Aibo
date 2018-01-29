@@ -66,13 +66,13 @@
 						<div class="card-stacked">
 							<div class="card-content">
 								<form>
-									<label>用户名</label><input type="text">
-									<label>昵称</label><input type="text">
-									<label>真实姓名</label><input type="text">
-									<label>职位</label><input type="text">
+									<label>用户名</label><input type="text" id="user_name">
+									<label>昵称</label><input type="text" id="user_nickname">
+									<label>真实姓名</label><input type="text" id="user_realname">
+									<label>职位</label><input type="text" id="user_job">
 									<label>性别</label><input type="radio" name="sex" id="man"><label for="man">男</label><input type="radio" name="sex" id="woman"><label for="woman">女</label><input type="radio" name="sex" id="secret"><label for="secret">保密</label><br/>
-									<label>生日</label><input type="text" class="datepicker">
-									<label>行业</label><input type="text">
+									<label>生日</label><input type="text" class="datepicker" id="user_birth">
+									<label>行业</label><input type="text" id="user_work">
 									<label>地区</label><br/>
 									<label>省</label>
 
@@ -103,7 +103,7 @@
 									</select>
 
 									<br/>
-									<label>简述</label><textarea cols="10" rows="10"></textarea>
+									<label>简述</label><textarea cols="10" rows="10" id="user_desc"></textarea>
 								</form>
 							</div>
 							<div class="card-action">
@@ -118,39 +118,12 @@
 			</div>
 			</div>
 
-			<script type="text/javascript">
-                $(document).ready(function () {
-
-                    $('.datepicker').pickadate({
-                        selectMonths: true, // Creates a dropdown to control month
-                        selectYears: 15, // Creates a dropdown of 15 years to control year,
-                        today: 'Today',
-                        clear: 'Clear',
-                        close: 'Ok',
-                        closeOnSelect: false // Close upon selecting a date,
-                    });
-
-                    $('select').material_select();
-
-                    $.ajax({
-                        url:"getUserInfo",
-                        data:{username:"squirrelchen"},
-                        dataType:"json",
-                        method:"post",
-                        success:function (data) {
-                            console.log("this object is ")+data;
-                        },
-                        error: function () {
-                            console.log("error ");
-                        }
-                    })
-
-
-
-                })
-			</script>
-
 	</body>
+
+<!--  javascript  begin -->
+<script type="text/javascript" src="js/page/myinfo.js"></script>
+
+<!--  javascript  end   -->
 
 
 </html>
