@@ -61,7 +61,7 @@
 					<h2 class="header">个人资料</h2>
 					<div class="card horizontal">
 						<div>
-							<a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px">修改头像</a>
+							<a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px"></a>
 						</div>
 						<div class="card-stacked">
 							<div class="card-content">
@@ -104,11 +104,13 @@
 
 									<br/>
 									<label>简述</label><textarea cols="10" rows="10" id="user_desc"></textarea>
+
+									<hr/>
+									<button class="btn waves-effect waves-light red" type="submit" name="action">submit<i class="material-icons right">mode_edit</i></button>
+
 								</form>
 							</div>
 							<div class="card-action">
-								<a href="#">This is a link</a>
-
 							</div>
 						</div>
 					</div>
