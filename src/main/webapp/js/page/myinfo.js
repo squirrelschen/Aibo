@@ -23,7 +23,7 @@ $(document).ready(function () {
     $('select').material_select();
 
     //使用省市县三级联动控件
-    addressInit('shen','city','xian','请选择省','请选择市','请选择县');
+    addressInit('province','city','country','请选择省','请选择市','请选择县');
 
     // ajax获取用户信息并填入表单
     $.ajax({
@@ -40,6 +40,8 @@ $(document).ready(function () {
             $("#user_birth").val(data.user_birth);
             $("#user_work").val(data.user_work);
             $("#user_desc").val(data.user_desc);
+            $("#address").val(data.user_area);
+
 
             if(data.user_sex=='男')
             {

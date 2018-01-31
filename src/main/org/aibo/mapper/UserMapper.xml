@@ -23,8 +23,29 @@
         SELECT * FROM user_info WHERE user_name =#{username}
     </select>
     <update id="updateUserInfo"  parameterType="User">
-        UPDATE user_info SET user_realname=#{user_realname},
-        user_sex=#{user_sex},user_job=#{user_job},user_work=#{user_work},user_area=#{user_area},user_desc=#{user_desc},
-        user_birth=#{user_birth} WHERE user_name=#{user_name}
+        UPDATE user_info SET
+
+        <if test="user_realname!=null">
+            user_realname=#{user_realname},
+        </if>
+        <if test="user_sex!=null">
+             user_sex=#{user_sex},
+        </if>
+        <if test="user_job!=null">
+             user_job=#{user_job},
+        </if>
+        <if test="user_work!=null">
+             user_work=#{user_work},
+        </if>
+        <if test="user_area!=null">
+             user_area=#{user_area},
+        </if>
+        <if test="user_desc!=null">
+            user_desc=#{user_desc},
+        </if>
+        <if test="user_birth!=null">
+            user_birth=#{user_birth}
+        </if>
+      WHERE user_name=#{user_name}
     </update>
 </mapper>

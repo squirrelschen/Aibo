@@ -70,9 +70,28 @@ public class UserAction {
 
 
     @RequestMapping(value="/updateUserInfo",method = RequestMethod.POST)
-    public String updateUserInfo(User user)
+    public String updateUserInfo(User user,@RequestParam("province")String province,@RequestParam("city")String city,@RequestParam("country")String country)
     {
-        logger.debug(user);
+
+        if(province.equals("请选择省")&&city.equals("请选择市")&&country.equals("请选择县")) {
+            user.setUser_area(null);
+        }
+        else {
+            if((!city.equals("请选择市"))&&(!country.equals("请选择县")))
+            {
+                user.setUser_area(province+"-"+city+"-"+country);
+            }
+            else
+            {
+                if(country.equals("请选择县")&&(!city.equals("请选择市")))
+                {
+                    user.setUser_area(province+"-"+city);
+                }
+                else {
+                    user.setUser_area(province);
+                }
+            }
+        }
         userService.updateUserInfo(user);
         return "success";
     }
