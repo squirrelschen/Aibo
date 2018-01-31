@@ -31,7 +31,7 @@
                                                                                         height="100px"></a>
                                                                                         <button class="btn waves-effect waves-light amber darken-4" 
                 	id="update_icon">
-                	不满意? 试着换一个</button>
+                	不满意? 试着换一个!</button>
                 	<hr/>
                 </li>
                 <li class="bold active">
