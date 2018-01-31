@@ -40,18 +40,7 @@ $(document).ready(function () {
             $("#user_birth").val(data.user_birth);
             $("#user_work").val(data.user_work);
             $("#user_desc").val(data.user_desc);
-            var province=data.user_area.substring(0,data.user_area.indexOf('-'));
-            console.log("p"+province);
-            $("#province").val(province);
-            var city=data.user_area.substring(data.user_area.indexOf('-')+1,data.user_area.lastIndexOf('-'));
-            console.log("c"+city);
-            var d=document.getElementsByName("city");
-            $("#city").valueOf("宜宾");
-            d.valueOf(city);
-            var country=data.user_area.substring(data.user_area.lastIndexOf('-')+1,data.user_area.length);
-            console.log("c"+country);
-            $("#country").val("翠屏");
-
+            $("#address").val(data.user_area);
 
 
             if(data.user_sex=='男')

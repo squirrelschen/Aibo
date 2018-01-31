@@ -83,8 +83,8 @@
                         <label>行业</label><input type="text" id="user_work" name="user_work">
                         <label>地区</label><br/>
 
-                        <div id="address">
-                            省<select  name="province" id="province" class="browser-default" style="width: 150px;display: inline">
+                        <div ><input type="text" id="address" readonly="readonly">
+                         <span>请选择以下进行更改</span>   省<select  name="province" id="province" class="browser-default" style="width: 150px;display: inline">
                         </select>
                             市
                             <select name="city" id="city" class="browser-default" style="width: 150px;display: inline">
