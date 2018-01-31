@@ -29,6 +29,10 @@
                                                                                         class="circle responsive-img"
                                                                                         width="100px"
                                                                                         height="100px"></a>
+                                                                                        <button class="btn waves-effect waves-light amber darken-4" 
+                	id="update_icon">
+                	不满意? 试着换一个</button>
+                	<hr/>
                 </li>
                 <li class="bold active">
                     <a class="collapsible-header waves-effect waves-teal" href="my_info.html"><i class="material-icons">info</i>我的资料</a>
@@ -59,6 +63,23 @@
                         </li>
                     </ul>
                 </li>
+                 <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li class="bold">
+                            <a class="collapsible-header waves-effect waves-teal"><i class="material-icons">message</i>我的消息</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li class="bold acitve">
+                                        <a class="collapsible-header waves-effect waves-teal"><i class="material-icons">https</i>系统消息</a>
+                                    </li>
+                                    <li class="bold">
+                                        <a class="collapsible-header waves-effect waves-teal"><i class="material-icons">keyboard</i>私信我的</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -66,7 +87,7 @@
         <h2 class="header">个人资料</h2>
         <div class="card horizontal">
             <div>
-                <a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px"></a><button>不满意?试着换一个</button>
+                <a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px"></a><br/>
             </div>
             <div class="card-stacked">
                 <div class="card-content">
