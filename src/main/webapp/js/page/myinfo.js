@@ -23,7 +23,7 @@ $(document).ready(function () {
     $('select').material_select();
 
     //使用省市县三级联动控件
-    addressInit('shen','city','xian','请选择省','请选择市','请选择县');
+    addressInit('province','city','country','请选择省','请选择市','请选择县');
 
     // ajax获取用户信息并填入表单
     $.ajax({
@@ -40,6 +40,19 @@ $(document).ready(function () {
             $("#user_birth").val(data.user_birth);
             $("#user_work").val(data.user_work);
             $("#user_desc").val(data.user_desc);
+            var province=data.user_area.substring(0,data.user_area.indexOf('-'));
+            console.log("p"+province);
+            $("#province").val(province);
+            var city=data.user_area.substring(data.user_area.indexOf('-')+1,data.user_area.lastIndexOf('-'));
+            console.log("c"+city);
+            var d=document.getElementsByName("city");
+            $("#city").valueOf("宜宾");
+            d.valueOf(city);
+            var country=data.user_area.substring(data.user_area.lastIndexOf('-')+1,data.user_area.length);
+            console.log("c"+country);
+            $("#country").val("翠屏");
+
+
 
             if(data.user_sex=='男')
             {

@@ -70,9 +70,11 @@ public class UserAction {
 
 
     @RequestMapping(value="/updateUserInfo",method = RequestMethod.POST)
-    public String updateUserInfo(User user)
+    public String updateUserInfo(User user,@RequestParam("province")String province,@RequestParam("city")String city,@RequestParam("country")String country)
     {
         logger.debug(user);
+        logger.info("province is"+province+"city"+city+"country"+country);
+        user.setUser_area(province+"-"+city+"-"+country);
         userService.updateUserInfo(user);
         return "success";
     }

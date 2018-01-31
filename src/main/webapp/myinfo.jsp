@@ -84,13 +84,13 @@
                         <label>地区</label><br/>
 
                         <div id="address">
-                            省<select id="shen" class="browser-default" style="width: 150px;display: inline">
+                            省<select  name="province" id="province" class="browser-default" style="width: 150px;display: inline">
                         </select>
                             市
-                            <select id="city" class="browser-default" style="width: 150px;display: inline">
+                            <select name="city" id="city" class="browser-default" style="width: 150px;display: inline">
                             </select>
                             县
-                            <select id="xian" class="browser-default" style="width: 150px;display: inline">
+                            <select name="country" id="country" class="browser-default" style="width: 150px;display: inline">
                             </select>
                         </div>
                         <br/>
