@@ -28,10 +28,7 @@
                     <a class="collapsible-header waves-effect waves-teal" href="#"><img src="images/th (1).jpg"
                                                                                         class="circle responsive-img"
                                                                                         width="100px"
-                                                                                        height="100px"></a>
-                                                                                        <button class="btn waves-effect waves-light amber darken-4"
-                	id="update_icon">
-                	不满意? 试着换一个!<input type="file"/></button>
+                                                                                        height="100px" id="changeuser_icon"><input type="file" hidden="hidden" id="user_icon_input" name="uploadfiles"/></a>
                 	<hr/>
                 </li>
                 <li class="bold active">
@@ -138,6 +135,7 @@
 <!--  javascript  begin -->
 <script type="text/javascript" src="js/page/myinfo.js"></script>
 <script type="text/javascript" src="js/page/city.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload.js"></script>
 <!--  javascript  end   -->
 
 

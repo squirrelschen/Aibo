@@ -64,9 +64,31 @@ $(document).ready(function () {
 
 
 
+    $("#changeuser_icon").click(function () {
+    	console.log("hei");
+    	$("#user_icon_input").click();
+    });
+
+	$("#user_icon_input").change(function() {
+        console.log("D");
 
 
+        $.ajaxFileUpload({
+            //处理文件上传操作的服务器端地址(可以传参数,已亲测可用)
+            url: 'fileUpload',
+            secureuri: false,                       //是否启用安全提交,默认为false
+            fileElementId: 'user_icon_input',           //文件选择框的id属性
+            dataType: 'json',                       //服务器返回的格式,可以是json或xml等
+            success: function (data, status) {        //服务器响应成功时的处理函数
+               console.log(data+"t");
+            },
+            error: function (data, status, e) { //服务器响应失败时的处理函数
+                console.log("3");
+            }
+        });
 
+
+    });
 
 
 
