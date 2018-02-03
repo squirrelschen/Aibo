@@ -1,24 +1,19 @@
 <%--
   Created by IntelliJ IDEA.
   User: Squirrel-Chen
-  Date: 2018/1/28
-  Time: 15:42
+  Date: 2018/2/3
+  Time: 15:22
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
 <head>
-
-    <head>
-        <meta charset="utf-8"/>
-        <title>用户首页</title>
-        <link rel="stylesheet" href="css/materialize.css"/>
-        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.js"></script>
-        <link rel="stylesheet" href="css/material-icons.css">
-    </head>
-
+    <title>博客首页</title>
+    <link rel="stylesheet" href="css/materialize.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <link rel="stylesheet" href="css/material-icons.css">
+</head>
 <body>
 <div class="row">
     <div class="col s12 m4 l3">
@@ -29,7 +24,7 @@
                                                                                         class="circle responsive-img"
                                                                                         width="100px"
                                                                                         height="100px" id="changeuser_icon"><input type="file" hidden="hidden" id="user_icon_input" name="uploadfiles"/></a>
-                	<hr/>
+                    <hr/>
                 </li>
                 <li class="bold active">
                     <a class="collapsible-header waves-effect waves-teal" href="my_info.html"><i class="material-icons">info</i>我的资料</a>
@@ -60,7 +55,7 @@
                         </li>
                     </ul>
                 </li>
-                 <li class="no-padding">
+                <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
                         <li class="bold">
                             <a class="collapsible-header waves-effect waves-teal"><i class="material-icons">message</i>我的消息</a>
@@ -80,64 +75,87 @@
             </ul>
         </div>
     </div>
-    <div class="col s12 m5 l9">
-        <h2 class="header">个人资料</h2>
-        <div class="card horizontal">
-            <div>
 
-                <a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px" id="user_icon"></a><br/>
+
+    <div id="context_container">
+
+    <div class="col s9 ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
             </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <form action="updateUserInfo" method="post">
-                        <label>用户名</label><input type="text" id="user_name" name="user_name" readonly="true">
-                        <label>真实姓名</label><input type="text" id="user_realname" name="user_realname">
-                        <label>职位</label><input type="text" id="user_job" name="user_job">
-                        <label>性别</label><input type="radio" name="user_sex" id="man"><label for="man">男</label><input
-                            type="radio" name="user_sex" id="woman"><label for="woman">女</label><input type="radio"
-                                                                                                       name="user_sex"
-                                                                                                       id="secret"><label
-                            for="secret">保密</label><br/>
-                        <label>生日</label><input type="text" class="datepicker" id="user_birth" name="user_birth">
-                        <label>行业</label><input type="text" id="user_work" name="user_work">
-                        <label>地区</label><br/>
-
-                        <div ><input type="text" id="address" readonly="readonly">
-                         <span>请选择以下进行更改</span>   省<select  name="province" id="province" class="browser-default" style="width: 150px;display: inline">
-                        </select>
-                            市
-                            <select name="city" id="city" class="browser-default" style="width: 150px;display: inline">
-                            </select>
-                            县
-                            <select name="country" id="country" class="browser-default" style="width: 150px;display: inline">
-                            </select>
-                        </div>
-                        <br/>
-                        <label>简述</label><textarea cols="10" rows="10" id="user_desc" name="user_desc"
-                                                   class="materialize-textarea" data-length="255"></textarea>
-
-                        <button class="btn waves-effect waves-light red" type="submit" name="action">修改资料<i
-                                class="material-icons right">mode_edit</i></button>
-
-                    </form>
-                </div>
-                <div class="card-action">
-                </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
             </div>
-        </div>
-
+          </div>
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
     </div>
+        <button type="button" id="more_btn">上拉加载更多</button>
+    </div>
+
+
+  
+
+
+    
+
+
+
+
+
+   
+    
 </div>
-</div>
-</div>
+
+
+
+
+
+
+
 
 </body>
 
-<!--  javascript  begin -->
-<script type="text/javascript" src="js/page/myinfo.js"></script>
-<script type="text/javascript" src="js/page/city.js"></script>
-<script type="text/javascript" src="js/ajaxfileupload.js"></script>
-<!--  javascript  end   -->
 
+<!--javascript begin -->
+<script type="text/javascript" src="js/page/myblog.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+
+<!--javascript end  -->
 
 </html>
