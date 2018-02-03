@@ -1,11 +1,14 @@
 package org.aibo.bean;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by Squirrel-Chen on 2018/2/3.
  */
-public class article {
+public class Article implements Serializable{
+
+    private static final long serialVersionUID = -1612504911440358382L;
 
     private int article_id;                          //博文的id
     private int article_type;                        //博文类型
