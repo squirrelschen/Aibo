@@ -79,6 +79,7 @@ $(document).ready(function () {
             dataType: 'json',                       //服务器返回的格式,可以是json或xml等
             success: function (data, status) {        //服务器响应成功时的处理函数
                 console.log(data.flag);
+                $("#user_icon").attr("src",images);
             },
             error: function (data, status, e) { //服务器响应失败时的处理函数
                 console.log("错误"+e);

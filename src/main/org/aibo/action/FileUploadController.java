@@ -1,6 +1,7 @@
 package org.aibo.action;
 
 import com.alibaba.fastjson.JSON;
+
 import org.apache.commons.io.FileUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by Squirrel-Chen on 2018/2/2.
@@ -26,8 +29,10 @@ public class FileUploadController {
     public Object fileUpload(@RequestParam MultipartFile[] uploadfiles, HttpServletRequest request, HttpServletResponse response) throws IOException{
 
         System.out.println("收到用户["  + "]的文件上传请求");
-        String realPath = "E://picture";
+        String realPath = "E:\\IdeaProject\\Aibo\\src\\main\\webapp\\images\\";
         String str=new String();
+        ArrayList<File> files=new ArrayList<File>();
+        HashMap<String,Object> result=new HashMap<String, Object>();
 
         boolean flag=false;
         int size=uploadfiles.length;
@@ -49,8 +54,7 @@ public class FileUploadController {
                 try {
                     //此处也可以使用Spring提供的MultipartFile.transferTo(File dest)方法实现文件的上传
                     FileUtils.copyInputStreamToFile(myfile.getInputStream(), new File(realPath, originalFilename));
-                    String string="{'status':'true'}";
-                    count=count+1;
+                   files.add(new File(realPath+originalFilename));
                 } catch (IOException e) {
                     System.out.println("文件[" + originalFilename + "]上传失败,堆栈轨迹如下");
                     e.printStackTrace();
@@ -59,10 +63,12 @@ public class FileUploadController {
             }
         }
 
-        if(count!=0)
+        if(files.size()!=0)
         {
             str="{'flag':'true'}";
-            return JSON.parse(str);
+            result.put("flag",str);
+            result.put("files",files);
+            return JSON.toJSON(result);
         }
         str="{'flag':'false'}";
         return JSON.parse(str);

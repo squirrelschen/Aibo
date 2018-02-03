@@ -84,7 +84,7 @@
         <h2 class="header">个人资料</h2>
         <div class="card horizontal">
             <div>
-                <a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px"></a><br/>
+                <a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px" id="user_icon"></a><br/>
             </div>
             <div class="card-stacked">
                 <div class="card-content">
