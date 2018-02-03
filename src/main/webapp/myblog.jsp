@@ -75,7 +75,10 @@
             </ul>
         </div>
     </div>
-    
+
+
+    <div id="context_container">
+
     <div class="col s9 ">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
@@ -122,6 +125,8 @@
             </div>
           </div>
     </div>
+        <button type="button" id="more_btn">上拉加载更多</button>
+    </div>
 
 
   
@@ -145,4 +150,12 @@
 
 
 </body>
+
+
+<!--javascript begin -->
+<script type="text/javascript" src="js/page/myblog.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+
+<!--javascript end  -->
+
 </html>
