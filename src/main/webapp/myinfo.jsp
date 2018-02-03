@@ -28,7 +28,8 @@
                     <a class="collapsible-header waves-effect waves-teal" href="#"><img src="images/th (1).jpg"
                                                                                         class="circle responsive-img"
                                                                                         width="100px"
-                                                                                        height="100px"></a>
+                                                                                        height="100px" id="changeuser_icon"><input type="file" hidden="hidden" id="user_icon_input" name="uploadfiles"/></a>
+                	<hr/>
                 </li>
                 <li class="bold active">
                     <a class="collapsible-header waves-effect waves-teal" href="my_info.html"><i class="material-icons">info</i>我的资料</a>
@@ -59,6 +60,23 @@
                         </li>
                     </ul>
                 </li>
+                 <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li class="bold">
+                            <a class="collapsible-header waves-effect waves-teal"><i class="material-icons">message</i>我的消息</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li class="bold acitve">
+                                        <a class="collapsible-header waves-effect waves-teal"><i class="material-icons">https</i>系统消息</a>
+                                    </li>
+                                    <li class="bold">
+                                        <a class="collapsible-header waves-effect waves-teal"><i class="material-icons">keyboard</i>私信我的</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -66,7 +84,7 @@
         <h2 class="header">个人资料</h2>
         <div class="card horizontal">
             <div>
-                <a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px"></a>
+                <a href="#"><img src="images/th (1).jpg" class="circle responsive-img" width="100px" height="100px"></a><br/>
             </div>
             <div class="card-stacked">
                 <div class="card-content">
@@ -117,6 +135,7 @@
 <!--  javascript  begin -->
 <script type="text/javascript" src="js/page/myinfo.js"></script>
 <script type="text/javascript" src="js/page/city.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload.js"></script>
 <!--  javascript  end   -->
 
 
