@@ -11,7 +11,7 @@ public class Article implements Serializable{
     private static final long serialVersionUID = -1612504911440358382L;
 
     private int article_id;                          //博文的id
-    private int article_type;                        //博文类型
+    private int article_type;                        //博文类型  1 原创 2 转载 3 翻译 4 其他
     private int article_user_id;                     //博文所属用户
     private String article_title;                    //博文标题
     private String article_context;                  //博文内容

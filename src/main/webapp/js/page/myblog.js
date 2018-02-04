@@ -8,12 +8,15 @@ $('.element').dropload({
     scrollArea : window,
     loadDownFn : function(me){
         $.ajax({
-            type: 'GET',
-            url: 'json/more.json',
+            url: 'myarticle',
             dataType: 'json',
+            data:{'user_id':1},
+            method:"post",
             success: function(data){
                 // 每次数据加载完，必须重置
-                LoadPage();
+                // LoadPage();
+                console.log(data);
+
                 me.resetload();
             },
             error: function(xhr, type){

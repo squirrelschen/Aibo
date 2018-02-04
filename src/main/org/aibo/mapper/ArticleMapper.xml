@@ -5,5 +5,21 @@
 <mapper namespace="org.aibo.mapper.ArticleMapper">
 
 
+    <resultMap id="article" type="Article">
+        <result property="article_id" column="article_id"></result>
+        <result property="article_type" column="article_type"></result>
+        <result property="article_user_id" column="article_user_id"></result>
+        <result property="article_title" column="article_title"></result>
+        <result property="article_context" column="article_context"></result>
+        <result property="article_publish_date" column="article_publish_date"></result>
+        <result property="article_last_date" column="article_last_date"></result>
+    </resultMap>
 
+
+
+
+
+    <select id="getUserArticle" resultMap="article" parameterType="int">
+        SELECT * FROM article_info WHERE article_user_id=#{user_id}
+    </select>
 </mapper>
