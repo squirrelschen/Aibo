@@ -18,21 +18,21 @@ $('#container').dropload({
             method:"post",
             success: function(data){
 
-                var arrLen = data.length;
-                if(arrLen > 0){
-                  console.log(data);
-                  // loaddata(data);
-                    // 如果没有数据
-                }else{
-                    // 锁定
+                console.log(pageNum);
+
+                if(data.status==true)
+                {
+
+                }
+                else
+                {
                     me.lock();
-                    // 无数据
                     me.noData();
                 }
                 // 为了测试，延迟1秒加载
                 setTimeout(function(){
                     // 插入数据到页面，放到最后面
-                    loaddata(data);
+                    loaddata(data.articles);
                     // 每次数据插入，必须重置
                     me.resetload();
                 },1000);
@@ -59,7 +59,7 @@ function loaddata(data) {
             $("#context_container").append("<div class='card blue-grey darken-1'>" +
                 "<div class='card-content white-text'>" +
                 "<span class='card-title'>" + x.article_title + "</span>" +
-                "<p>" + x.artitle_context + "</p>" +
+                "<p>" + x.article_context + "</p>" +
                 "</div>" +
                 "<div class='card-action'> " +
                 "<a href='' value='" + x.artitle_id + "'>More</a>" +

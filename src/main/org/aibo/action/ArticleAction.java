@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by Squirrel-Chen on 2018/2/4.
@@ -21,7 +22,9 @@ public class ArticleAction {
     @Autowired
     private ArticleService articleService;
     private String status;
+    private boolean flag=false;
     private Object json;
+    private HashMap<String ,Object> resultmap=new HashMap<String, Object>();
 
     public Object getJson() {
         return json;
@@ -48,11 +51,16 @@ public class ArticleAction {
         }
         if(articles.size()!=0)
         {
-            json= JSON.toJSON(articles);
+//            status="{'status':'true'}";
+            flag=true;
+            resultmap.put("status",flag);
+            resultmap.put("articles",articles);
+            json=JSON.toJSON(resultmap);
             return json;
         }
-        status="{'status':'false'}";
-        json=JSON.parse(status);
+        flag=false;
+        resultmap.put("status",flag);
+        json=JSON.toJSON(resultmap);
         return json;
     }
 

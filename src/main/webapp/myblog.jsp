@@ -78,9 +78,9 @@
     </div>
 
 
-    <div id="container">
+    <div id="container" class="col s9">
 
-    <div class="col s9 " id="context_container" >
+    <div id="context_container" >
 
     </div>
 
