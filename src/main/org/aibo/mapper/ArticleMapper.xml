@@ -16,10 +16,7 @@
     </resultMap>
 
 
-
-
-
-    <select id="getUserArticle" resultMap="article" parameterType="int">
+    <select id="selectUserArticleByPage" resultMap="article">
         SELECT * FROM article_info WHERE article_user_id=#{user_id}
     </select>
 </mapper>

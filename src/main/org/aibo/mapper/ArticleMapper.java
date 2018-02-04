@@ -1,6 +1,7 @@
 package org.aibo.mapper;
 
 import org.aibo.bean.Article;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -10,5 +11,6 @@ import java.util.ArrayList;
  */
 @Component
 public interface ArticleMapper {
-    public ArrayList<Article> getUserArticle(int user_id);
+
+    public ArrayList<Article> selectUserArticleByPage(@Param("user_id")int user_id, @Param("pageNum")int pageNum, @Param("pageSize")int pageSize);
 }

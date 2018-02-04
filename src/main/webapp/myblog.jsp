@@ -13,6 +13,7 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
     <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/dropload.css">
 </head>
 <body>
 <div class="row">
@@ -154,7 +155,7 @@
 
 <!--javascript begin -->
 <script type="text/javascript" src="js/page/myblog.js"></script>
-<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/dropload.min.js"></script>
 
 <!--javascript end  -->
 

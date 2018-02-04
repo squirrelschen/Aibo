@@ -33,12 +33,18 @@ public class ArticleAction {
 
     @RequestMapping("/myarticle")
     @ResponseBody
-    public Object getUserArticle(@RequestParam("user_id")int user_id)
+    public Object getUserArticle(@RequestParam("user_id")int user_id,@RequestParam("pageNum")int pageNum,@RequestParam("pageSize")int pageSize)
     {
+
+
+        System.out.println(
+                "pageSize"+pageSize+"pageNum"+pageNum
+        );
+
         ArrayList<Article> articles=new ArrayList<Article>();
         if(user_id!=0&&user_id!=-1)
         {
-            articles=articleService.getUserArticle(user_id);
+            articles=articleService.selectUserArticleByPage(user_id,pageNum,pageSize);
         }
         if(articles.size()!=0)
         {

@@ -4,20 +4,36 @@
 
 $(document).ready(function () {
 
-$('.element').dropload({
+    var pageSize=3;
+    var pageNum=0;
+
+$('#context_container').dropload({
     scrollArea : window,
     loadDownFn : function(me){
+        pageNum=pageNum+1;
         $.ajax({
             url: 'myarticle',
             dataType: 'json',
-            data:{'user_id':1},
+            data:{'user_id':1,'pageNum':pageNum,'pageSize':pageSize},
             method:"post",
             success: function(data){
-                // 每次数据加载完，必须重置
-                // LoadPage();
-                console.log(data);
-
-                me.resetload();
+                var arrLen = data.length;
+                if(arrLen > 0){
+                  console.log(data);
+                    // 如果没有数据
+                }else{
+                    // 锁定
+                    me.lock();
+                    // 无数据
+                    me.noData();
+                }
+                // 为了测试，延迟1秒加载
+                setTimeout(function(){
+                    // 插入数据到页面，放到最后面
+                    // $('#context_container').append(result);
+                    // 每次数据插入，必须重置
+                    me.resetload();
+                },1000);
             },
             error: function(xhr, type){
                 alert('Ajax error!');

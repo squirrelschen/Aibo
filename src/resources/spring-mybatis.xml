@@ -41,6 +41,20 @@
         <property name="dataSource" ref="dataSource"/>
         <!--<property name="mapperLocations" value="classpath:org/aibo/mapper/*.xml"/>-->
         <property name="configLocation" value="classpath:mybatis.xml"/>
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <!-- 这里的几个配置主要演示如何使用，如果不理解，一定要去掉下面的配置 -->
+                    <property name="properties">
+                        <value>
+                            helperDialect=mysql
+                            supportMethodsArguments=true
+                            autoRuntimeDialect=true
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
     </bean>
 
     <!-- 自动扫描了所有的XxxxMapper.xml对应的mapper接口文件，这样就不用一个一个手动配置Mpper的映射了，

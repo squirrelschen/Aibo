@@ -18,7 +18,7 @@ public class ArticleServiceImpl implements ArticleService {
     @Autowired
     private ArticleDao articleDao;
 
-    public ArrayList<Article> getUserArticle(int user_id) {
-        return articleDao.getUserArticle(user_id);
+    public ArrayList<Article> selectUserArticleByPage(int user_id, int pageNum, int pageSize) {
+        return articleDao.selectUserArticleByPage(user_id,pageNum,pageSize);
     }
 }

@@ -1,6 +1,7 @@
 package org.aibo.dao;
 
 import org.aibo.bean.Article;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.ArrayList;
 
@@ -9,5 +10,5 @@ import java.util.ArrayList;
  */
 public interface ArticleDao {
 
-    public ArrayList<Article> getUserArticle(int user_id);
+    public ArrayList<Article> selectUserArticleByPage(int user_id,int pageNum,int pageSize);
 }
