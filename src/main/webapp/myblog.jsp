@@ -78,68 +78,13 @@
     </div>
 
 
-    <div id="context_container">
+    <div id="container">
 
-    <div class="col s9 ">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-    </div>
-        <button type="button" id="more_btn">上拉加载更多</button>
+    <div class="col s9 " id="context_container" >
+
     </div>
 
-
-  
-
-
-    
-
-
-
-
-
-   
+    </div>
     
 </div>
 
@@ -155,7 +100,7 @@
 
 <!--javascript begin -->
 <script type="text/javascript" src="js/page/myblog.js"></script>
-<script type="text/javascript" src="js/dropload.min.js"></script>
+<script type="text/javascript" src="js/dropload.js"></script>
 
 <!--javascript end  -->
 
