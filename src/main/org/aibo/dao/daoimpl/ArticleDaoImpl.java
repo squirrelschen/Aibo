@@ -18,7 +18,7 @@ public class ArticleDaoImpl implements ArticleDao {
     private ArticleMapper articleMapper;
 
 
-    public ArrayList<Article> getUserArticle(int user_id) {
-        return articleMapper.getUserArticle(user_id);
+    public ArrayList<Article> selectUserArticleByPage(int user_id, int pageNum, int pageSize) {
+        return articleMapper.selectUserArticleByPage(user_id, pageNum, pageSize);
     }
 }
