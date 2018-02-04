@@ -1,5 +1,8 @@
 package org.aibo.bean;
 
+import com.alibaba.fastjson.annotation.JSONField;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,7 +18,11 @@ public class Article implements Serializable{
     private int article_user_id;                     //博文所属用户
     private String article_title;                    //博文标题
     private String article_context;                  //博文内容
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JSONField(format = "yyyy-MM-dd")
     private Date article_publish_date;                //博文发布时间
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JSONField(format = "yyyy-MM-dd")
     private Date article_last_date;                   //博文修改时间
 
     /**
