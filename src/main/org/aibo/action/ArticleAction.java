@@ -64,4 +64,22 @@ public class ArticleAction {
         return json;
     }
 
+    @RequestMapping("/article")
+    @ResponseBody
+    public Object article(@RequestParam("id")int article_id)
+    {
+        Article article=articleService.selectArticleById(article_id);
+        if(article!=null)
+        {
+            status="{'status':'true'}";
+            resultmap.put("status",status);
+            resultmap.put("article",article);
+            json=JSON.toJSON(resultmap);
+            return json;
+        }
+        status="{'status':'false'}";
+        resultmap.put("status",status);
+        json=JSON.toJSON(resultmap);
+        return json;
+    }
 }

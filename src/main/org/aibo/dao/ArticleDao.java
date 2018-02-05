@@ -11,4 +11,5 @@ import java.util.ArrayList;
 public interface ArticleDao {
 
     public ArrayList<Article> selectUserArticleByPage(int user_id,int pageNum,int pageSize);
+    public Article selectArticleById(int article_id);
 }
