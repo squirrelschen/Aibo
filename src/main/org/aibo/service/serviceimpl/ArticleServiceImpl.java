@@ -21,4 +21,8 @@ public class ArticleServiceImpl implements ArticleService {
     public ArrayList<Article> selectUserArticleByPage(int user_id, int pageNum, int pageSize) {
         return articleDao.selectUserArticleByPage(user_id,pageNum,pageSize);
     }
+
+    public Article selectArticleById(int article_id) {
+        return articleDao.selectArticleById(article_id);
+    }
 }

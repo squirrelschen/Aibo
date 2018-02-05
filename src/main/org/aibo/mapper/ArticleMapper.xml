@@ -19,4 +19,7 @@
     <select id="selectUserArticleByPage" resultMap="article">
         SELECT * FROM article_info WHERE article_user_id=#{user_id}
     </select>
+    <select id="selectArticleById" resultMap="article" parameterType="int">
+        SELECT * FROM article_info WHERE article_id=#{article_id}
+    </select>
 </mapper>

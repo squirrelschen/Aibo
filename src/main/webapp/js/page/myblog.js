@@ -57,10 +57,11 @@ function loaddata(data) {
     $.each(data,function (i,x) {
 
             $("#context_container").append("<div class='card blue-grey darken-1'>" +
-                "<div class='card-content white-text'>" +
-                "<span class='card-title'>" + x.article_title + "</span>" +
-                "<p>" + x.article_context + "</p>" +
-                "</div>" +
+                "<div class='card-content white-text'>"+
+                "<div class='card-title'>"+
+                "<span>" + x.article_title + "</span>"+"<div id='title-right' style='float: right;display: inline' ><span>"+x.article_publish_date+"</span><b>"+article_type_transfer(x.article_type)+"</b></div><hr/></div>"+
+                "<div class='card-context'><p>" + x.article_context + "</p>" +
+                "</div></div>" +
                 "<div class='card-action'> " +
                 "<a href='' value='" + x.artitle_id + "'>More</a>" +
                 "</div>" +
@@ -68,5 +69,23 @@ function loaddata(data) {
     })
 };
 
+function article_type_transfer(type) {
 
-
+    if(type==1)
+    {
+        type="原创";
+    }
+    else if(type==2)
+    {
+        type="转载";
+    }
+    else if (type==3)
+    {
+        type="翻译";
+    }
+    else
+    {
+        type="其他";
+    }
+    return type;
+}
