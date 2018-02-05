@@ -9,6 +9,8 @@
 <html>
 <head>
     <title>博文页面</title>
+    <link href="css/materialize.css"  rel="stylesheet">
+    <link href="css/material-icons.css" rel="stylesheet">
 </head>
 <body>
 
@@ -28,4 +30,13 @@
 
 
 </body>
+
+<!-- javascript begin -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/page/article.js"></script>
+
+
+<!-- javascript end -->
+
 </html>
