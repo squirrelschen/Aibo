@@ -82,4 +82,22 @@ public class ArticleAction {
         json=JSON.toJSON(resultmap);
         return json;
     }
+
+    @RequestMapping("/updateArticle")
+    @ResponseBody
+    public Object update(Article article)
+    {
+        int result=articleService.updateArticleById(article);
+        if(result!=-1&&result!=0)
+        {
+            status="{'status':'true'}";
+            resultmap.put("status",status);
+            json=JSON.toJSON(resultmap);
+            return json;
+        }
+        status="{'status':'flase'}";
+        resultmap.put("status",status);
+        json=JSON.toJSON(resultmap);
+        return json;
+    }
 }

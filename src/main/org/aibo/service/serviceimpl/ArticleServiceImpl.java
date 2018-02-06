@@ -25,4 +25,8 @@ public class ArticleServiceImpl implements ArticleService {
     public Article selectArticleById(int article_id) {
         return articleDao.selectArticleById(article_id);
     }
+
+    public int updateArticleById(Article article) {
+        return articleDao.updateArticleById(article);
+    }
 }

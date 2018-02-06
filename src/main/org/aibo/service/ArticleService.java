@@ -12,4 +12,5 @@ public interface ArticleService {
 
     public ArrayList<Article> selectUserArticleByPage(int user_id, int pageNum,int pageSize);
     public Article selectArticleById(int article_id);
+    public int updateArticleById(Article article);
 }
