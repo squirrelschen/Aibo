@@ -69,4 +69,7 @@
         </if>
         )
     </insert>
+    <delete id="deleteArticleById" parameterType="int">
+        DELETE FROM article_info WHERE article_id=#{article_id}
+    </delete>
 </mapper>

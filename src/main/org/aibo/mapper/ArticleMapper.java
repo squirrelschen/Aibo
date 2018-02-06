@@ -16,4 +16,5 @@ public interface ArticleMapper {
     public Article selectArticleById(int article_id);
     public int updateArticleById(Article article);
     public int insertArticle(Article article);
+    public int deleteArticleById(int article_id);
 }
