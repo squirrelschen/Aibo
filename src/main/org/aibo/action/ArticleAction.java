@@ -83,11 +83,29 @@ public class ArticleAction {
         return json;
     }
 
-    @RequestMapping("/updateArticle")
+    @RequestMapping("/update")
     @ResponseBody
     public Object update(Article article)
     {
         int result=articleService.updateArticleById(article);
+        if(result!=-1&&result!=0)
+        {
+            status="{'status':'true'}";
+            resultmap.put("status",status);
+            json=JSON.toJSON(resultmap);
+            return json;
+        }
+        status="{'status':'flase'}";
+        resultmap.put("status",status);
+        json=JSON.toJSON(resultmap);
+        return json;
+    }
+
+    @RequestMapping("/insert")
+    @ResponseBody
+    public Object insert(Article article)
+    {
+        int result=articleService.insertArticle(article);
         if(result!=-1&&result!=0)
         {
             status="{'status':'true'}";
