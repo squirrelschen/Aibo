@@ -25,4 +25,16 @@ public class ArticleDaoImpl implements ArticleDao {
     public Article selectArticleById(int article_id) {
         return articleMapper.selectArticleById(article_id);
     }
+
+    public int updateArticleById(Article article) {
+        return articleMapper.updateArticleById(article);
+    }
+
+    public int insertArticle(Article article) {
+        return articleMapper.insertArticle(article);
+    }
+
+    public int deleteArticleById(int article_id) {
+        return articleMapper.deleteArticleById(article_id);
+    }
 }

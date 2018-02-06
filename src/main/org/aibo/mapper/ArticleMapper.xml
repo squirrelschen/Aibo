@@ -22,4 +22,54 @@
     <select id="selectArticleById" resultMap="article" parameterType="int">
         SELECT * FROM article_info WHERE article_id=#{article_id}
     </select>
+    <update id="updateArticleById" parameterType="Article">
+          UPDATE article_info SET
+          <if test="article_context!=null">
+              article_context=#{article_context},
+          </if>
+        <if test="article_title!=null">
+            article_title=#{article_title},
+        </if>
+        <if test="article_type!=null">
+            article_type=#{article_type},
+        </if>
+        <if test="article_user_id!=null">
+            article_user_id=#{article_user_id},
+        </if>
+        <if test="article_publish_date!=null">
+            article_publish_date=#{article_publish_date},
+        </if>
+        <if test="article_last_date!=null">
+            article_last_date=#{article_last_date}
+        </if>
+        WHERE article_id=#{article_id}
+    </update>
+    <insert id="insertArticle" parameterType="Article">
+        INSERT INTO article_info VALUES (
+        <if test="article_id!=null">
+            #{article_id},
+        </if>
+        <if test="article_type!=null">
+            #{article_type},
+        </if>
+        <if test="article_user_id!=null">
+            #{article_user_id},
+        </if>
+        <if test="article_title!=null">
+            #{article_title},
+        </if>
+        <if test="article_context!=null">
+            #{article_context},
+        </if>
+        <if test="article_publish_date!=null">
+            #{article_publish_date},
+        </if>
+        <if test="article_last_date!=null">
+            #{article_last_date}
+        </if>
+        )
+    </insert>
+    <delete id="deleteArticleById" parameterType="int">
+        DELETE FROM article_info WHERE article_id=#{article_id}
+    </delete>
 </mapper>

@@ -82,4 +82,60 @@ public class ArticleAction {
         json=JSON.toJSON(resultmap);
         return json;
     }
+
+    @RequestMapping("/update")
+    @ResponseBody
+    public Object update(Article article)
+    {
+        int result=articleService.updateArticleById(article);
+        if(result!=-1&&result!=0)
+        {
+            status="{'status':'true'}";
+            resultmap.put("status",status);
+            json=JSON.toJSON(resultmap);
+            return json;
+        }
+        status="{'status':'flase'}";
+        resultmap.put("status",status);
+        json=JSON.toJSON(resultmap);
+        return json;
+    }
+
+    @RequestMapping("/insert")
+    @ResponseBody
+    public Object insert(Article article)
+    {
+        int result=articleService.insertArticle(article);
+        if(result!=-1&&result!=0)
+        {
+            status="{'status':'true'}";
+            resultmap.put("status",status);
+            json=JSON.toJSON(resultmap);
+            return json;
+        }
+        status="{'status':'flase'}";
+        resultmap.put("status",status);
+        json=JSON.toJSON(resultmap);
+        return json;
+    }
+
+    @RequestMapping("/delete")
+    @ResponseBody
+    public Object delete(@RequestParam("id")int article_id)
+    {
+        if(article_id!=0&&article_id!=-1) {
+            int result = articleService.deleteArticleById(article_id);
+            if (result!=-1&&result!=0)
+            {
+                status="{'status':'true'}";
+                resultmap.put("status",status);
+                json=JSON.toJSON(status);
+                return json;
+            }
+        }
+        status="{'status':'false'}";
+        resultmap.put("status",status);
+        json=JSON.toJSON(resultmap);
+        return json;
+    }
 }

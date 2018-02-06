@@ -14,4 +14,7 @@ public interface ArticleMapper {
 
     public ArrayList<Article> selectUserArticleByPage(@Param("user_id")int user_id, @Param("pageNum")int pageNum, @Param("pageSize")int pageSize);
     public Article selectArticleById(int article_id);
+    public int updateArticleById(Article article);
+    public int insertArticle(Article article);
+    public int deleteArticleById(int article_id);
 }

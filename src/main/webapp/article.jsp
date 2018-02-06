@@ -15,9 +15,9 @@
 <body>
 
 
-<div id="container">
+<div id="container" class="row">
 
-    <div id="article_info">
+    <div id="article_info" class="col s12 m8" style="text-align: center;margin: auto 0">
 
     </div>
 
