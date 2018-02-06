@@ -33,4 +33,8 @@ public class ArticleDaoImpl implements ArticleDao {
     public int insertArticle(Article article) {
         return articleMapper.insertArticle(article);
     }
+
+    public int deleteArticleById(int article_id) {
+        return articleMapper.deleteArticleById(article_id);
+    }
 }

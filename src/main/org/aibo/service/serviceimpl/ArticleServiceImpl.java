@@ -33,4 +33,8 @@ public class ArticleServiceImpl implements ArticleService {
     public int insertArticle(Article article) {
         return articleDao.insertArticle(article);
     }
+
+    public int deleteArticleById(int article_id) {
+        return articleDao.deleteArticleById(article_id);
+    }
 }
