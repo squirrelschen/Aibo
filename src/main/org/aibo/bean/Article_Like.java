@@ -9,6 +9,7 @@ import java.util.Date;
 public class Article_Like implements Serializable {
 
     private static final long serialVersionUID = 2951606268254613733L;
+    private int like_id;                 //点赞id
     private int article_id;             //点赞的博文id
     private int user_id;               //点赞的用户id
     private Date like_date;            //点赞的时间
@@ -29,6 +30,9 @@ public class Article_Like implements Serializable {
         return user_id;
     }
 
+    public int getLike_id() {
+        return like_id;
+    }
     public void setArticle_id(int article_id) {
         this.article_id = article_id;
     }
@@ -39,5 +43,9 @@ public class Article_Like implements Serializable {
 
     public void setUser_id(int user_id) {
         this.user_id = user_id;
+    }
+
+    public void setLike_id(int like_id) {
+        this.like_id = like_id;
     }
 }
