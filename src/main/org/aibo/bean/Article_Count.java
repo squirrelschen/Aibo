@@ -1,9 +1,13 @@
 package org.aibo.bean;
 
+import java.io.Serializable;
+
 /**
  * Created by Squirrel-Chen on 2018/2/7.
  */
-public class Article_Count {
+public class Article_Count implements Serializable {
+
+    private static final long serialVersionUID = 3995238843996425675L;
 
     private int comments_count;                //评论数
     private int view_count;                    //浏览数
