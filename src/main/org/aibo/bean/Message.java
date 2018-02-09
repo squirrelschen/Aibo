@@ -1,13 +1,14 @@
 package org.aibo.bean;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by Squirrel-Chen on 2018/2/9.
  */
-public class Message {
+public class Message implements Serializable {
 
-
+    private static final long serialVersionUID = 7257719638171960078L;
     private int message_id;
     private int message_type;
     private int message_user_id;
