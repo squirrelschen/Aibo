@@ -9,12 +9,12 @@ import java.util.Date;
 public class Message implements Serializable {
 
     private static final long serialVersionUID = 7257719638171960078L;
-    private int message_id;
-    private int message_type;
-    private int message_user_id;
-    private String message_title;
-    private String message_context;
-    private Date message_date;
+    private int message_id;                //消息编号id
+    private int message_type;              //消息类型
+    private int message_user_id;          //消息所属用户id
+    private String message_title;         //消息标题
+    private String message_context;        //消息内容
+    private Date message_date;             //消息发布时间
 
     /**
      *  Message getter setter 方法
