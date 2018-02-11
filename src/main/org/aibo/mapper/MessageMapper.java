@@ -11,4 +11,5 @@ import java.util.ArrayList;
 @Component
 public interface MessageMapper {
     public ArrayList<Message> selectMessageByUserId(int user_id);
+    public Message selectMessageById(int message_id);
 }
