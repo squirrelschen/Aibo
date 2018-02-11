@@ -20,4 +20,8 @@ public class MessageServiceImpl implements MessageService {
     public ArrayList<Message> selectMessageByUserId(int user_id) {
         return messageDao.selectMessageByUserId(user_id);
     }
+
+    public Message selectMessageById(int message_id) {
+        return messageDao.selectMessageById(message_id);
+    }
 }

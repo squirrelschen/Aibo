@@ -8,4 +8,7 @@
     <select id="selectMessageByUserId" resultType="Message">
 
     </select>
+    <select id="selectMessageById" resultType="Message">
+
+    </select>
 </mapper>
