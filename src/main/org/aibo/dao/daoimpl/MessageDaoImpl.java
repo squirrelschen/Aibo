@@ -20,4 +20,8 @@ public class MessageDaoImpl implements MessageDao {
     public ArrayList<Message> selectMessageByUserId(int user_id) {
         return messageMapper.selectMessageByUserId(user_id);
     }
+
+    public Message selectMessageById(int message_id) {
+        return messageMapper.selectMessageById(message_id);
+    }
 }
