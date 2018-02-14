@@ -61,4 +61,11 @@
         WHERE
         user_id=#{user_id}
     </update>
+    <update id="updateUserIconById" >
+        UPDATE user_info SET
+        <if test="user_icon!=null">
+            user_icon=#{icon}
+        </if>
+        WHERE user_id=#{user_id}
+    </update>
 </mapper>

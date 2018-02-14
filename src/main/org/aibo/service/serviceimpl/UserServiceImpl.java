@@ -30,4 +30,8 @@ public class UserServiceImpl implements UserService {
     public int updateUserPassWordById(int user_id, String password) {
         return userDao.updateUserPassWordById(user_id, password);
     }
+
+    public int updateUserIconById(int user_id, String icon) {
+        return userDao.updateUserIconById(user_id, icon);
+    }
 }

@@ -14,5 +14,5 @@ public interface UserMapper {
 
     public String selectUserPassWordByName(String user_name);
     public int updateUserPassWordById(int user_id,String password);
-
+    public int updateUserIconById(int user_id,String icon);
 }
