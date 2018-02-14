@@ -18,4 +18,8 @@ public class UserContactServiceImpl implements UserContactService {
     public User_Contact selectUserContactById(int user_id) {
         return userContactDao.selectUserContactByUserId(user_id);
     }
+
+    public int updateUserContactById(User_Contact user_contact) {
+        return userContactDao.updateUserContactById(user_contact);
+    }
 }

@@ -8,4 +8,5 @@ import org.aibo.bean.User_Contact;
 public interface UserContactService {
 
     public User_Contact selectUserContactById(int user_id);
+    public int updateUserContactById(User_Contact user_contact);
 }
