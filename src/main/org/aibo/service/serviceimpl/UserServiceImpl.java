@@ -24,6 +24,10 @@ public class UserServiceImpl implements UserService {
     }
 
     public String selectUserPassWordByName(String user_name) {
-        return userDao.selectUserPassWordById(user_name);
+        return userDao.selectUserPassWordByName(user_name);
+    }
+
+    public int updateUserPassWordById(int user_id, String password) {
+        return userDao.updateUserPassWordById(user_id, password);
     }
 }
