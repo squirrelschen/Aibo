@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.aibo.mapper.UserContactMapper">
+
+
+    <select id="selectUserContactById" resultType="org.aibo.bean.User_Contact">
+        SELECT * FROM user_contact WHERE user_id=#{user_id}
+    </select>
+    <update id="updateUserContactById" >
+        UPDATE user_contact SET
+        <if test="user_tel!=null">
+            user_tel=#{user_tel},
+        </if>
+
+        <if test="user_email!=null">
+            user_email=#{user_email},
+        </if>
+
+        <if test="user_twitter!=null">
+            user_twitter=#{user_twitter},
+        </if>
+
+        <if test="user_facebook!=null">
+            user_facebook=#{user_facebook},
+        </if>
+
+        <if test="user_google!=null">
+            user_google=#{user_google},
+        </if>
+        <if test="user_github!=null">
+            user_github=#{user_github},
+        </if>
+        <if test="user_qq!=null">
+            user_qq=#{user_qq},
+        </if>
+        <if test="user_wechat!=null">
+            user_wechat=#{user_wechat},
+        </if>
+
+        <if test="user_weibo!=null">
+            user_weibo=#{user_weibo},
+        </if>
+        WHERE
+        user_id=#{user_id}
+    </update>
+</mapper>

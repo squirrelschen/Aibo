@@ -48,4 +48,17 @@
         </if>
       WHERE user_name=#{user_name}
     </update>
+
+
+    <select id="selectUserPassWordByName" resultType="java.lang.String">
+        SELECT user_password FROM user_login WHERE user_id IN (SELECT user_id FROM user_info WHERE user_name=#{user_name})
+    </select>
+    <update id="updateUserPassWordById">
+        UPDATE user_login SET
+        <if test="user_password!=null">
+            user_password=#{password}
+        </if>
+        WHERE
+        user_id=#{user_id}
+    </update>
 </mapper>

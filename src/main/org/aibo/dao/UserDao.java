@@ -9,4 +9,7 @@ public interface UserDao {
 
     public User getUserInfo(String username);   //获取用户信息
     public int  updateUserInfo(User user);      //更新用户信息
+
+    public String selectUserPassWordByName(String user_name);    //根据用户名获取用户密码
+    public int updateUserPassWordById(int user_id,String password);   //根据用户id更改用户密码
 }

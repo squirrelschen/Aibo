@@ -22,4 +22,12 @@ public class UserServiceImpl implements UserService {
     public int updateUserInfo(User user) {
         return userDao.updateUserInfo(user);
     }
+
+    public String selectUserPassWordByName(String user_name) {
+        return userDao.selectUserPassWordByName(user_name);
+    }
+
+    public int updateUserPassWordById(int user_id, String password) {
+        return userDao.updateUserPassWordById(user_id, password);
+    }
 }

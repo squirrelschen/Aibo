@@ -95,4 +95,13 @@ public class UserAction {
         userService.updateUserInfo(user);
         return "success";
     }
+
+
+    @RequestMapping(value="/login",method = RequestMethod.POST)
+    @ResponseBody
+    public Object login(){
+        return null;
+    }
+
+
 }
