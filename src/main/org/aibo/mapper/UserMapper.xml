@@ -50,7 +50,7 @@
     </update>
 
 
-    <select id="selectUserPassWordById" resultType="java.lang.String">
+    <select id="selectUserPassWordByName" resultType="java.lang.String">
         SELECT user_password FROM user_login WHERE user_id IN (SELECT user_id FROM user_info WHERE user_name=#{user_name})
     </select>
 </mapper>

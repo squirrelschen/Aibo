@@ -12,6 +12,6 @@ public interface UserMapper {
     public User getUserInfo(String  username);
     public int  updateUserInfo(User user);
 
-    public String selectUserPassWordById(String user_name);
+    public String selectUserPassWordByName(String user_name);
 
 }
