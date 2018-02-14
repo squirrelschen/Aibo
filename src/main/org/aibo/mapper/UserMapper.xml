@@ -48,4 +48,9 @@
         </if>
       WHERE user_name=#{user_name}
     </update>
+
+
+    <select id="selectUserPassWordById" resultType="java.lang.String">
+        SELECT user_password FROM user_login where user_id=#{user_id}
+    </select>
 </mapper>
