@@ -10,9 +10,9 @@ public class User_Followed implements Serializable {
 
 
     private static final long serialVersionUID = 2922029549355920255L;
-    private int user_id;
-    private int user_followed_id;
-    private Date followed_date;
+    private int user_id;                    //用户id
+    private int user_followed_id;           //用户关注的id
+    private Date followed_date;             //关注日期
 
     /**
      * User_Followed getter setter 方法
