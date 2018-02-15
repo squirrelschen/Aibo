@@ -5,5 +5,7 @@
 <mapper namespace="org.aibo.mapper.UserRelatedMapper">
 
 
-
+    <select id="selectUserRelated" resultType="java.lang.Integer">
+    SELECT user_followed_id FROM user_followed WHERE user_id=#{user_id}
+    </select>
 </mapper>
