@@ -19,4 +19,8 @@ public class UserRelatedServiceImpl implements UserRelatedService {
     public ArrayList<Integer> selectUserRelated(int user_id) {
         return userRelatedDao.selectUserRelated(user_id);
     }
+
+    public ArrayList<Integer> selectRelatedUser(int user_related_id) {
+        return userRelatedDao.selectRelatedUser(user_related_id);
+    }
 }

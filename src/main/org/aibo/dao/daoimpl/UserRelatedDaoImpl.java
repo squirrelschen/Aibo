@@ -19,4 +19,8 @@ public class UserRelatedDaoImpl implements UserRelatedDao {
     public ArrayList<Integer> selectUserRelated(int user_id) {
         return userRelatedMapper.selectUserRelated(user_id);
     }
+
+    public ArrayList<Integer> selectRelatedUser(int user_related_id) {
+        return userRelatedMapper.selectRelatedById(user_related_id);
+    }
 }

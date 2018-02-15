@@ -8,4 +8,7 @@
     <select id="selectUserRelated" resultType="java.lang.Integer">
     SELECT user_followed_id FROM user_followed WHERE user_id=#{user_id}
     </select>
+    <select id="selectRelatedById" resultType="java.lang.Integer">
+        SELECT user_id FROM user_followed WHERE user_followed_id=#{user_related_id}
+    </select>
 </mapper>

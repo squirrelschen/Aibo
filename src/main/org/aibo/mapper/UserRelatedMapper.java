@@ -12,4 +12,6 @@ public interface UserRelatedMapper {
 
     public ArrayList<Integer> selectUserRelated(int user_id);
 
+    public ArrayList<Integer> selectRelatedById(int user_related_id);
+
 }
