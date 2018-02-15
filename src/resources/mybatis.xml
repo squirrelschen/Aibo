@@ -17,5 +17,6 @@
         <mapper resource="org/aibo/mapper/ArticleMapper.xml"></mapper>
         <mapper resource="org/aibo/mapper/MessageMapper.xml"></mapper>
         <mapper resource="org/aibo/mapper/UserContactMapper.xml"></mapper>
+        <mapper resource="org/aibo/mapper/UserRelatedMapper.xml"></mapper>
     </mappers>
 </configuration>
