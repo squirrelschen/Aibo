@@ -45,4 +45,35 @@
         WHERE
         user_id=#{user_id}
     </update>
+    <insert id="insertUserContact">
+        INSERT INTO user_contact VALUES (
+        <if test="user_id!=null">
+            #{user_id},
+        </if>
+        <if test="user_email!=null">
+            #{user_email},
+        </if>
+        <if test="user_tel!=null">
+            #{user_tel},
+        </if>
+        <if test="user_twitter!=null">
+            #{user_twitter},
+        </if>
+        <if test="user_facebook!=null">
+            #{user_facebook},
+        </if>
+        <if test="user_google!=null">
+            #{user_google},
+        </if>
+        <if test="user_qq!=null">
+            #{user_qq},
+        </if>
+        <if test="user_wechat!=null">
+            #{user_wechat},
+        </if>
+        <if test="user_weibo!=null">
+            #{user_weibo}
+        </if>
+        )
+    </insert>
 </mapper>

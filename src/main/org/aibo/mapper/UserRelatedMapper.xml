@@ -11,4 +11,19 @@
     <select id="selectRelatedById" resultType="java.lang.Integer">
         SELECT user_id FROM user_followed WHERE user_followed_id=#{user_related_id}
     </select>
+
+    <insert id="insertUserRelated">
+        INSERT INTO user_followed VALUES
+        (
+        <if test="user_id!=null">
+            #{user_id},
+        </if>
+        <if test="user_followed_id!=null">
+            #{user_followed_id},
+        </if>
+        <if test="followed_date!=null">
+            #{followed_date}
+        </if>
+        )
+    </insert>
 </mapper>

@@ -22,4 +22,8 @@ public class UserContactDaoImpl implements UserContactDao {
     public int updateUserContactById(User_Contact user_contact) {
         return userContactMapper.updateUserContactById(user_contact);
     }
+
+    public int insertUserContact(User_Contact user_contact) {
+        return userContactMapper.insertUserContact(user_contact);
+    }
 }

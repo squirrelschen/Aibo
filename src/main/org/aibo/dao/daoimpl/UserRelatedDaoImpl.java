@@ -1,5 +1,6 @@
 package org.aibo.dao.daoimpl;
 
+import org.aibo.bean.User_Followed;
 import org.aibo.dao.UserRelatedDao;
 import org.aibo.mapper.UserRelatedMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,5 +23,9 @@ public class UserRelatedDaoImpl implements UserRelatedDao {
 
     public ArrayList<Integer> selectRelatedUser(int user_related_id) {
         return userRelatedMapper.selectRelatedById(user_related_id);
+    }
+
+    public int insertUserRelated(User_Followed user_followed) {
+        return userRelatedMapper.insertUserRelated(user_followed);
     }
 }
