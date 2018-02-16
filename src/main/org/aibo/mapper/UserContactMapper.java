@@ -11,4 +11,5 @@ public interface UserContactMapper {
 
     public User_Contact selectUserContactById(int user_id);
     public int updateUserContactById(User_Contact user_contact);
+    public int insertUserContact(User_Contact contact);
 }

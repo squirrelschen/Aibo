@@ -24,6 +24,6 @@ public class UserContactDaoImpl implements UserContactDao {
     }
 
     public int insertUserContact(User_Contact user_contact) {
-        return 0;
+        return userContactMapper.insertUserContact(user_contact);
     }
 }
