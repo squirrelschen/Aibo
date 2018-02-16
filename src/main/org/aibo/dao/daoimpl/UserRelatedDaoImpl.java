@@ -26,6 +26,6 @@ public class UserRelatedDaoImpl implements UserRelatedDao {
     }
 
     public int insertUserRelated(User_Followed user_followed) {
-
-    }return 0;
+        return userRelatedMapper.insertUserRelated(user_followed);
+    }
 }
