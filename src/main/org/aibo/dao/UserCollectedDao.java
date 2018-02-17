@@ -9,9 +9,7 @@ public interface UserCollectedDao {
 
 
     public User_Collected selectUserCollectedById(int user_id);   //根据用户id获取用户所有的收藏信息
-
-
-
+    public int deleteUserCollectedById(int collected_id);         //根据收藏id删除收藏
 
 
 }
