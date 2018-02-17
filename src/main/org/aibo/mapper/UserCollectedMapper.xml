@@ -8,4 +8,7 @@
     <select id="selectUserCollectedById" resultType="org.aibo.bean.User_Collected">
 
     </select>
+    <select id="deleteUserCollectedById" resultType="int">
+
+    </select>
 </mapper>
