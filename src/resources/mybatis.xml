@@ -9,6 +9,7 @@
         <typeAlias type="org.aibo.bean.Article" alias="Article"></typeAlias>
         <typeAlias type="org.aibo.bean.Message" alias="Message"></typeAlias>
         <typeAlias type="org.aibo.bean.User_Contact" alias="User_Contact"></typeAlias>
+        <typeAlias type="org.aibo.bean.User_Collected" alias="User_Collected"></typeAlias>
     </typeAliases>
 
     <!-- 映射map -->
@@ -18,5 +19,6 @@
         <mapper resource="org/aibo/mapper/MessageMapper.xml"></mapper>
         <mapper resource="org/aibo/mapper/UserContactMapper.xml"></mapper>
         <mapper resource="org/aibo/mapper/UserRelatedMapper.xml"></mapper>
+        <mapper resource="org/aibo/mapper/UserCollectedMapper.xml"></mapper>
     </mappers>
 </configuration>

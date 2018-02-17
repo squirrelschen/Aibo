@@ -10,6 +10,7 @@ public interface UserService {
     public User getUserInfo(String username);
     public int  updateUserInfo(User user);
 
+    public User selectUserInfoById(int user_id);
     public String selectUserPassWordByName(String user_name);
     public int updateUserPassWordById(int user_id,String password);
     public int updateUserIconById(int user_id,String icon);
