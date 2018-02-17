@@ -7,7 +7,7 @@ import java.util.Date;
 /**
  * Created by Squirrel-Chen on 2018/2/17.
  */
-public class User_Collection implements Serializable{
+public class User_Collected implements Serializable{
 
     private static final long serialVersionUID = -3877634378182876960L;
     private int user_id;
