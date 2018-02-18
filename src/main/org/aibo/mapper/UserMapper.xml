@@ -108,4 +108,15 @@
 
         )
     </insert>
+
+    <update id="updateUserLevel">
+        UPDATE user_info SET
+        <if test="user_level!=null">
+            user_level=#{level}
+        </if>
+        WHERE
+        <if test="user_id!=null">
+            user_id=#{user_id}
+        </if>
+    </update>
 </mapper>

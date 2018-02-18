@@ -18,4 +18,6 @@ public interface UserMapper {
     public int updateUserPassWordById(int user_id,String password);
     public int updateUserIconById(int user_id,String icon);
     public int insertUserInfo(User user);
+
+    public int updateUserLevel(int user_id,double level);
 }

@@ -45,4 +45,8 @@ public class UserDaoImpl implements UserDao {
     public int insertUserInfo(User user) {
         return userMapper.insertUserInfo(user);
     }
+
+    public int updateUser_level(int user_id, double user_level) {
+        return userMapper.updateUserLevel(user_id, user_level);
+    }
 }
