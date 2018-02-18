@@ -11,7 +11,7 @@ public class User_Collected implements Serializable{
 
     private static final long serialVersionUID = -3877634378182876960L;
     private int user_id;
-    private ArrayList<Article> collected_article;
+    private ArrayList<Integer> articles_id;
     private Date collected_date;
 
 
@@ -23,10 +23,6 @@ public class User_Collected implements Serializable{
         return user_id;
     }
 
-    public ArrayList<Article> getCollected_article() {
-        return collected_article;
-    }
-
     public Date getCollected_date() {
         return collected_date;
     }
@@ -35,11 +31,14 @@ public class User_Collected implements Serializable{
         this.user_id = user_id;
     }
 
-    public void setCollected_article(ArrayList<Article> collected_article) {
-        this.collected_article = collected_article;
-    }
-
     public void setCollected_date(Date collected_date) {
         this.collected_date = collected_date;
+    }
+
+    public ArrayList<Integer> getArticles_id() {
+        return articles_id;
+    }
+    public void setArticles_id(ArrayList<Integer> articles_id) {
+        this.articles_id = articles_id;
     }
 }

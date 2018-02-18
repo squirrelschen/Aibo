@@ -5,10 +5,12 @@
 <mapper namespace="org.aibo.mapper.UserCollectedMapper">
 
 
-    <select id="selectUserCollectedById" resultType="org.aibo.bean.User_Collected">
-
+    <select id="selectUserCollectedById" resultType="Integer">
+        SELECT article_id WHERE user_id=#{user_id}
     </select>
-    <select id="deleteUserCollectedById" resultType="int">
 
-    </select>
+    <delete id="deleteUserCollectedById" resultType="int">
+
+    </delete>
+
 </mapper>
