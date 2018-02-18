@@ -41,4 +41,8 @@ public class UserDaoImpl implements UserDao {
     public int updateUserIconById(int user_id, String icon) {
         return userMapper.updateUserPassWordById(user_id, icon);
     }
+
+    public int insertUserInfo(User user) {
+        return userMapper.insertUserInfo(user);
+    }
 }
