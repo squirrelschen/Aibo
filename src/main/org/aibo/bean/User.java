@@ -28,7 +28,7 @@ public class User implements Serializable{
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JSONField(format = "yyyy-MM-dd")                //设置date类型json处理时间格式
     private Date user_birth;                 //用户生日
-    private String user_level;               //用户经验值
+    private double user_level;               //用户经验值
 
 
     /**
@@ -116,11 +116,11 @@ public class User implements Serializable{
         return user_birth;
     }
 
-    public String getUser_level() {
+    public double getUser_level() {
         return user_level;
     }
 
-    public void setUser_level(String user_level) {
+    public void setUser_level(double user_level) {
         this.user_level = user_level;
     }
 

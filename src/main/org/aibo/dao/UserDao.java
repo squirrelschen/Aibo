@@ -14,4 +14,7 @@ public interface UserDao {
     public String selectUserPassWordByName(String user_name);    //根据用户名获取用户密码
     public int updateUserPassWordById(int user_id,String password);   //根据用户id更改用户密码
     public int updateUserIconById(int user_id,String icon);          //修改用户头像
+    public int insertUserInfo(User user);                          //增加用户信息
+
+    public int updateUserlevel(int user_id,double user_level);               //更改用户的经验值
 }

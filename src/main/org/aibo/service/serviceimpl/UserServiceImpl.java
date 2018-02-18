@@ -38,4 +38,12 @@ public class UserServiceImpl implements UserService {
     public int updateUserIconById(int user_id, String icon) {
         return userDao.updateUserIconById(user_id, icon);
     }
+
+    public int insertUserInfo(User user) {
+        return userDao.insertUserInfo(user);
+    }
+
+    public int updateUserLevel(int user_id, double user_level) {
+        return userDao.updateUserlevel(user_id, user_level);
+    }
 }

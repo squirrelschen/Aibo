@@ -71,4 +71,52 @@
     <select id="selectUserInfoById" resultType="User">
         SELECT * FROM user_info WHERE user_id=#{user_id}
     </select>
+
+    <insert id="insertUserInfo" >
+        INSERT INTO user_info VALUES (
+
+        <if test="user_name!=null">
+            #{user_name},
+        </if>
+        <if test="user_realname!=null">
+            #{user_realname},
+        </if>
+        <if test="user_sex!=null">
+            #{user_sex}
+        </if>
+        <if test="user_birth!=null">
+            #{user_birth},
+        </if>
+        <if test="user_job!=null">
+            #{user_job},
+        </if>
+        <if test="user_work!=null">
+            #{user_work},
+        </if>
+        <if test="user_area!=null">
+            #{user_area},
+        </if>
+        <if test="user_desc!=null">
+            #{user_desc},
+        </if>
+        <if test="user_icon!=null">
+            #{user_icon},
+        </if>
+        <if test="user_level!=null">
+            #{user_level}
+        </if>
+
+        )
+    </insert>
+
+    <update id="updateUserLevel">
+        UPDATE user_info SET
+        <if test="user_level!=null">
+            user_level=#{user_level}
+        </if>
+        WHERE
+        <if test="user_id!=null">
+            user_id=#{user_id}
+        </if>
+    </update>
 </mapper>
