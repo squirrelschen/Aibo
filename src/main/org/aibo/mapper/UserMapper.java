@@ -19,5 +19,5 @@ public interface UserMapper {
     public int updateUserIconById(int user_id,String icon);
     public int insertUserInfo(User user);
 
-    public int updateUserLevel(int user_id,double level);
+    public int updateUserLevel(int user_id,double user_level);
 }

@@ -112,7 +112,7 @@
     <update id="updateUserLevel">
         UPDATE user_info SET
         <if test="user_level!=null">
-            user_level=#{level}
+            user_level=#{user_level}
         </if>
         WHERE
         <if test="user_id!=null">

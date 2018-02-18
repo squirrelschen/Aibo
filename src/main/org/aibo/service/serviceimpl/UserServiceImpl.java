@@ -44,6 +44,6 @@ public class UserServiceImpl implements UserService {
     }
 
     public int updateUserLevel(int user_id, double user_level) {
-        return userDao.updateUser_level(user_id, user_level);
+        return userDao.updateUserlevel(user_id, user_level);
     }
 }
