@@ -10,5 +10,4 @@ import org.springframework.stereotype.Component;
 public interface UserCollectedMapper {
 
     public User_Collected selectUserCollectedById(int user_id);
-    public int deleteUserCollectedById(int collected_id);
 }

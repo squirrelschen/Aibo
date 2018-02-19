@@ -20,7 +20,4 @@ public class UserCollectedServiceImpl implements UserCollectedService{
         return userCollectedDao.selectUserCollectedById(user_id);
     }
 
-    public int deleteUserColltedById(int collected_id) {
-        return userCollectedDao.deleteUserCollectedById(collected_id);
-    }
 }

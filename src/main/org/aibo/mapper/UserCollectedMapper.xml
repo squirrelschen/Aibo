@@ -4,11 +4,29 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.aibo.mapper.UserCollectedMapper">
 
+    <resultMap id="user_collected" type="User_Collected">
+        <id property="id" column="collected_id"></id>
+        <result property="user_id" column="user_id"></result>
+        <result property="collected_date" column="collected_date"></result>
+        <association property="article" javaType="Article">
+            <id property="id" column="article_id"></id>
+            <result property="article_type" column="article_type"></result>
+            <result property="article_title" column="article_title"></result>
+            <result property="article_context" column="article_context"></result>
+            <result property="article_publish_date" column="article_publish_date"></result>
+            <result property="article_last_date" column="article_last_date"></result>
+        </association>
+    </resultMap>
 
-    <select id="selectUserCollectedById" resultType="org.aibo.bean.User_Collected">
 
+    <select id="selectUserCollectedById" resultMap="user_collected" >
+
+        SELECT article_id,article_type,article_user_id,article_title,article_context,article_publish_date,
+        article_last_date,collected_id,user_id,article_id,collected_date
+        FROM
+        article INNER JOIN
+        user_collected ON article.article_id=user_collected.article_id
+        WHERE article_user_id=#{user_id}
     </select>
-    <select id="deleteUserCollectedById" resultType="int">
 
-    </select>
 </mapper>

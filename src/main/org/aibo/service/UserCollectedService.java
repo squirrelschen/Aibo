@@ -8,6 +8,6 @@ import org.aibo.bean.User_Collected;
 public interface UserCollectedService {
 
     public User_Collected selectUserCollectedById(int user_id);
-    public int deleteUserColltedById(int collected_id);
+
 
 }
