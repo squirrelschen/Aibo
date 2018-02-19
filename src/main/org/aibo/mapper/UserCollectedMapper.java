@@ -10,7 +10,5 @@ import java.util.ArrayList;
  */
 @Component
 public interface UserCollectedMapper {
-
-    public ArrayList<Integer> selectUserCollectedById(int user_id);
-    public int deleteUserCollectedById(int collected_id);
+    public User_Collected selectUserCollectedById(int user_id);
 }

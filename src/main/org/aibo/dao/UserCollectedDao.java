@@ -9,10 +9,6 @@ import java.util.ArrayList;
  */
 public interface UserCollectedDao {
 
-
-    public ArrayList<Integer> selectUserCollectedById(int user_id);   //根据用户id获取用户所有的收藏信息
-    public int deleteUserCollectedById(int collected_id);         //根据收藏id删除收藏
-
-
+    public User_Collected selectUserCollectedById(int user_id);  //根据用户id获取收藏的博文信息
 
 }

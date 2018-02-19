@@ -20,7 +20,4 @@ public class UserCollectedDaoImpl implements UserCollectedDao{
         return collectedMapper.selectUserCollectedById(user_id);
     }
 
-    public int deleteUserCollectedById(int collected_id) {
-        return collectedMapper.deleteUserCollectedById(collected_id);
-    }
 }
