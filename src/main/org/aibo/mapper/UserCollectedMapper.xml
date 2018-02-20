@@ -5,28 +5,28 @@
 <mapper namespace="org.aibo.mapper.UserCollectedMapper">
 
     <resultMap id="user_collected" type="User_Collected">
-        <id property="id" column="collected_id"></id>
-        <result property="user_id" column="user_id"></result>
-        <result property="collected_date" column="collected_date"></result>
-        <association property="article" javaType="Article">
-            <id property="id" column="article_id"></id>
-            <result property="article_type" column="article_type"></result>
-            <result property="article_title" column="article_title"></result>
-            <result property="article_context" column="article_context"></result>
-            <result property="article_publish_date" column="article_publish_date"></result>
-            <result property="article_last_date" column="article_last_date"></result>
+        <association property="article_collected" javaType="Article_Collected">
+            <id column="collected_id" property="collected_id"></id>
+            <result column="collected_date" property="collected_date"></result>
+            <association property="article" javaType="Article">
+                <id column="article_id" property="article_id"></id>
+                <result column="article_type" property="article_type"></result>
+                <result column="article_user_id" property="article_user_id"></result>
+                <result column="article_title" property="article_title"></result>
+                <result column="article_context" property="article_context"></result>
+                <result column="article_publish_date" property="article_publish_date"></result>
+                <result column="article_last_date" property="article_last_date"></result>
+            </association>
         </association>
+
     </resultMap>
-
-
-    <select id="selectUserCollectedById" resultMap="user_collected" >
-
-        SELECT article_id,article_type,article_user_id,article_title,article_context,article_publish_date,
-        article_last_date,collected_id,user_id,article_id,collected_date
-        FROM
-        article INNER JOIN
-        user_collected ON article.article_id=user_collected.article_id
-        WHERE article_user_id=#{user_id}
+    <select id="selectUserCollectedById" resultType="User_Collected">
+        SELECT article_info.*,user_collected.collected_id,user_collected.collected_date
+        FROM article_info INNER JOIN user_collected
+        ON article_info.article_id=user_collected.article_id
+        WHERE user_collected.user_id=#{user_id}
     </select>
+
+
 
 </mapper>
