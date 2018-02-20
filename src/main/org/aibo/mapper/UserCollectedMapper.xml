@@ -5,7 +5,6 @@
 <mapper namespace="org.aibo.mapper.UserCollectedMapper">
 
     <resultMap id="user_collected" type="User_Collected">
-
         <association property="article_collected" javaType="Article_Collected">
             <id column="collected_id" property="collected_id"></id>
             <result column="collected_date" property="collected_date"></result>

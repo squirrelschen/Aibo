@@ -10,6 +10,7 @@
         <typeAlias type="org.aibo.bean.Message" alias="Message"></typeAlias>
         <typeAlias type="org.aibo.bean.User_Contact" alias="User_Contact"></typeAlias>
         <typeAlias type="org.aibo.bean.User_Collected" alias="User_Collected"></typeAlias>
+        <typeAlias type="org.aibo.bean.Article_Collected" alias="Article_Collected"></typeAlias>
     </typeAliases>
 
     <!-- 映射map -->
