@@ -5,11 +5,11 @@
 <mapper namespace="org.aibo.mapper.UserCollectedMapper">
 
     <resultMap id="user_collected" type="User_Collected">
-        <association property="article_collected" javaType="Article_Collected">
+        <collection property="collecteds" ofType="Article_Collected">
             <id column="collected_id" property="collected_id"></id>
             <result column="collected_date" property="collected_date"></result>
             <association property="article" javaType="Article">
-                <id column="article_id" property="article_id"></id>
+                <result column="article_id" property="article_id"></result>
                 <result column="article_type" property="article_type"></result>
                 <result column="article_user_id" property="article_user_id"></result>
                 <result column="article_title" property="article_title"></result>
@@ -17,10 +17,9 @@
                 <result column="article_publish_date" property="article_publish_date"></result>
                 <result column="article_last_date" property="article_last_date"></result>
             </association>
-        </association>
-
+            </collection>
     </resultMap>
-    <select id="selectUserCollectedById" resultType="User_Collected">
+    <select id="selectUserCollectedById" resultMap="user_collected">
         SELECT article_info.*,user_collected.collected_id,user_collected.collected_date
         FROM article_info INNER JOIN user_collected
         ON article_info.article_id=user_collected.article_id
