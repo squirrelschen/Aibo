@@ -9,6 +9,4 @@ public interface UserCollectedDao {
 
     public User_Collected selectUserCollectedById(int user_id);  //根据用户id获取收藏的博文信息
 
-
-
 }
