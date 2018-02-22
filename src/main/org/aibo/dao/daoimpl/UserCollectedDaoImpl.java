@@ -17,6 +17,6 @@ public class UserCollectedDaoImpl implements UserCollectedDao{
     private UserCollectedMapper collectedMapper;
 
     public User_Collected selectUserCollectedById(int user_id) {
-        return collectedMapper.selectUserCollectedById(user_id).get(0);
+        return collectedMapper.selectUserCollectedById(user_id);
     }
 }

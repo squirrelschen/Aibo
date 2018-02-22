@@ -11,5 +11,5 @@ import java.util.List;
 @Component
 public interface UserCollectedMapper {
 
-    public List<User_Collected> selectUserCollectedById(int user_id);
+    public User_Collected selectUserCollectedById(int user_id);
 }
