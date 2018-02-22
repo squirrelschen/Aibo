@@ -11,8 +11,8 @@ public class Article_Collected implements Serializable{
     private static final long serialVersionUID = 8918416247831526099L;
 
     private int collected_id ;
-    private Article article;
     private Date collected_date;
+    private Article article;
 
     /**
      *  Article_Collection getter setter 方法

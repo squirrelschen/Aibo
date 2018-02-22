@@ -5,6 +5,7 @@
 <mapper namespace="org.aibo.mapper.UserCollectedMapper">
 
     <resultMap id="user_collected" type="User_Collected">
+        <id column="user_id" property="user_id"></id>
         <collection property="collecteds" ofType="Article_Collected">
             <id column="collected_id" property="collected_id"></id>
             <result column="collected_date" property="collected_date"></result>
@@ -20,7 +21,7 @@
             </collection>
     </resultMap>
     <select id="selectUserCollectedById" resultMap="user_collected">
-        SELECT article_info.*,user_collected.collected_id,user_collected.collected_date
+        SELECT article_info.*,user_collected.collected_id,user_collected.collected_date,user_collected.user_idt
         FROM article_info INNER JOIN user_collected
         ON article_info.article_id=user_collected.article_id
         WHERE user_collected.user_id=#{user_id}
