@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import java.util.List;
+import org.springframework.transaction.annotation.Transactional;
+import java.util.Date;
 
 /**
  * Created by Squirrel-Chen on 2018/2/22.
@@ -33,4 +33,18 @@ public class UserCollectedDaoTest {
             }
 //        System.out.println("how many article_collected "+user_collected.get(0).getCollecteds().size());
     }
+
+    @Test
+    @Transactional
+    public void testInsertUserCollected(){
+        int result =userCollectedMapper.insertUserCollected(1,7,new Date());
+        System.out.println("返回的记录数"+result);
+    }
+
+    @Test
+    public void testDeleteUserCollected(){
+        int result=userCollectedMapper.deleteUserCollectedById(13);
+        System.out.println("返回的记录数"+result);
+    }
+
 }

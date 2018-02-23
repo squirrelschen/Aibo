@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * Created by Squirrel-Chen on 2018/2/7.
  */
-public class Article_Collected implements Serializable{
+public class Article_Collected implements Serializable {
 
     private static final long serialVersionUID = 8918416247831526099L;
 

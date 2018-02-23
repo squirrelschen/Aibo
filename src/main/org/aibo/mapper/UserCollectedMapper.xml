@@ -27,6 +27,13 @@
         WHERE user_collected.user_id=#{user_id}
     </select>
 
+    <insert id="insertUserCollected" >
+        INSERT INTO user_collected (user_id,article_id,collected_date) VALUES (#{arg0},#{arg1},#{arg2})
+    </insert>
+
+    <delete id="deleteUserCollectedById">
+        DELETE FROM user_collected WHERE collected_id=#{collected_id}
+    </delete>
 
 
 </mapper>
