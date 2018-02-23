@@ -26,4 +26,8 @@ public class UserCollectedServiceImpl implements UserCollectedService{
         return userCollectedDao.insertUserCollected(user_id, article_id, collected_date);
     }
 
+    public int deleteUserCollected(int collected_id) {
+        return userCollectedDao.deleteUserCollectedById(collected_id);
+    }
+
 }
