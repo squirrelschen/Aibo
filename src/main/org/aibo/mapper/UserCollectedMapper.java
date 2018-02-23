@@ -3,6 +3,7 @@ package org.aibo.mapper;
 import org.aibo.bean.User_Collected;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -12,4 +13,5 @@ import java.util.List;
 public interface UserCollectedMapper {
 
     public User_Collected selectUserCollectedById(int user_id);
+    public int insertUserCollected(int user_id,int article_id,Date collected_date);
 }
