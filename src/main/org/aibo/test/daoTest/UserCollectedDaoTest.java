@@ -40,4 +40,11 @@ public class UserCollectedDaoTest {
         int result =userCollectedMapper.insertUserCollected(1,7,new Date());
         System.out.println("返回的记录数"+result);
     }
+
+    @Test
+    public void testDeleteUserCollected(){
+        int result=userCollectedMapper.deleteUserCollectedById(13);
+        System.out.println("返回的记录数"+result);
+    }
+
 }

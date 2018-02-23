@@ -25,4 +25,8 @@ public class UserCollectedDaoImpl implements UserCollectedDao{
     public int insertUserCollected(int user_id, int article_id, Date collected_date) {
         return collectedMapper.insertUserCollected(user_id, article_id, collected_date);
     }
+
+    public int deleteUserCollectedById(int collected_id) {
+        return collectedMapper.deleteUserCollectedById(collected_id);
+    }
 }

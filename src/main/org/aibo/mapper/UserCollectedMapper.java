@@ -13,4 +13,5 @@ public interface UserCollectedMapper {
 
     public User_Collected selectUserCollectedById(int user_id);
     public int insertUserCollected(int user_id,int article_id,Date collected_date);
+    public int deleteUserCollectedById(int collected_id);
 }

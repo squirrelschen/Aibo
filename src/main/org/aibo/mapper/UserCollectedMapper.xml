@@ -31,5 +31,9 @@
         INSERT INTO user_collected (user_id,article_id,collected_date) VALUES (#{arg0},#{arg1},#{arg2})
     </insert>
 
+    <delete id="deleteUserCollectedById">
+        DELETE FROM user_collected WHERE collected_id=#{collected_id}
+    </delete>
+
 
 </mapper>
