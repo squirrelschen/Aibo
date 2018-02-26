@@ -15,6 +15,11 @@ public class UserContactAction {
     public Object update(){return  null;
     }
 
+    @RequestMapping("/insert")
+    public Object insert()
+    {
+        return null;
+    }
 
 
 }
