@@ -18,5 +18,9 @@ public class UserCollectedAction {
     }
 
 
+    @RequestMapping("/delete")
+    public Object delete(){
+        return null;
+    }
 
 }
