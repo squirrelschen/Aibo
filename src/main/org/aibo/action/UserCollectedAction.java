@@ -23,4 +23,7 @@ public class UserCollectedAction {
         return null;
     }
 
+    /**
+     *  hello world
+     */
 }
