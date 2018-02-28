@@ -16,7 +16,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by Squirrel-Chen on 2018/2/2.
+ * Created by Squirrel-Chen on 2018/2/2
+ *  文件上传controller .
  */
 @Controller
 public class FileUploadController {
