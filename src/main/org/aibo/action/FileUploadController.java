@@ -26,7 +26,7 @@ public class FileUploadController {
     @ResponseBody
     public Object fileUpload(@RequestParam MultipartFile[] uploadfiles, HttpServletRequest request, HttpServletResponse response) throws IOException{
 
-        System.out.println("收到用户["  + "]的文件上传请求");
+//        System.out.println("收到用户["  + "]的文件上传请求");
         String realPath = "E:\\IdeaProject\\Aibo\\src\\main\\webapp\\images\\";
         String str=new String();
         ArrayList<File> files=new ArrayList<File>();
@@ -44,10 +44,10 @@ public class FileUploadController {
 
             }else{
                 originalFilename = myfile.getOriginalFilename();
-                System.out.println("文件原名: " + originalFilename);
-                System.out.println("文件名称: " + myfile.getName());
-                System.out.println("文件长度: " + myfile.getSize());
-                System.out.println("文件类型: " + myfile.getContentType());
+//                System.out.println("文件原名: " + originalFilename);
+//                System.out.println("文件名称: " + myfile.getName());
+//                System.out.println("文件长度: " + myfile.getSize());
+//                System.out.println("文件类型: " + myfile.getContentType());
                 System.out.println("========================================");
                 try {
                     //此处也可以使用Spring提供的MultipartFile.transferTo(File dest)方法实现文件的上传
