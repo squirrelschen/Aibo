@@ -56,7 +56,7 @@ public class FileUploadController {
                     count=count+1;
                    files.add(new File(realPath+originalFilename));
                 } catch (IOException e) {
-                    System.out.println("文件[" + originalFilename + "]上传失败,堆栈轨迹如下");
+//                    System.out.println("文件[" + originalFilename + "]上传失败,堆栈轨迹如下");
                     e.printStackTrace();
                     String string="{'status':'false'}";
                 }
