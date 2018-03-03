@@ -22,6 +22,8 @@ import java.util.HashMap;
 @Controller
 public class FileUploadController {
 
+    // 文件上传action
+
     @RequestMapping(value="/fileUpload",method = RequestMethod.POST)
     @ResponseBody
     public Object fileUpload(@RequestParam MultipartFile[] uploadfiles, HttpServletRequest request, HttpServletResponse response) throws IOException{
