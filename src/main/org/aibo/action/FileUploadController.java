@@ -23,6 +23,8 @@ import java.util.HashMap;
 public class FileUploadController {
 
     // 文件上传action
+    // 1. 准备重新设计数据库 2. 重新设计接口
+
 
     @RequestMapping(value="/fileUpload",method = RequestMethod.POST)
     @ResponseBody
