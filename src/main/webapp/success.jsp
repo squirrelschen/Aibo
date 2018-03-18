@@ -14,6 +14,5 @@
 
 <h1>Hi guys ! Welcome to my website ! Thank you !</h1>
 
-<h1>strong hello world </h1>
 </body>
 </html>
